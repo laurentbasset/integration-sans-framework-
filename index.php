@@ -14,9 +14,9 @@
     <title>Le Crédit Lédonien : Accueil</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <?php include 'includes/header.php'; ?>
+    <?php include 'includes/home.php'; ?>
+    <?php include 'includes/footer.php'; ?>
     
 </body>
 </html>
