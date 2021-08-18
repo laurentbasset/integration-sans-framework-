@@ -1,4 +1,2 @@
-<footer id="footer">
-    <hr>
-    <em>un super site</em>
-</footer>
+<em>un super site</em>
+

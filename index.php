@@ -16,22 +16,43 @@
 </head>
 <body>
 <div id="wrapper">
+    <!-- début de la page -->
+    <div id="page">
+        <!-- header -->
+        <header id="header">
+            <?php include 'includes/header.php'; ?>
+            </header>
 
-    <?php include 'includes/header.php'; ?>
+            <!-- debut du main -->
+            <main id="main">
+            <?php
+            if (!empty($_GET['page'])) {
+                    switch ($_GET['page']) {
+                    case 'about': include 'includes/about.php'; break;
+                    default : include 'includes/home.php';
+                    }
+                }else{
+                    include 'includes/home.php';
+                }
+                ?>
+            </main>
+            <!-- fin du main -->
 
-    <?php
-    if (!empty($_GET['page'])) {
-            switch ($_GET['page']) {
-            case 'about': include 'includes/about.php'; break;
-            default : include 'includes/home.php';
-            }
-    }else{
-        include 'includes/home.php';
-    }
-    ?>
-    <?php include 'includes/mainNav.php'; ?>
-    <?php include 'includes/footer.php'; ?>
-</div>
+            <!-- navigation du bas -->
+            <nav id="bottomNav">
+            <?php include 'includes/bottomNav.php'; ?>
+            </nav>
+            
+            
+            <!-- footer -->
+            <footer id="footer">
+                <?php include 'includes/footer.php'; ?>
+            </footer>
+    </div>
+    <!-- fin de la page -->
     
+    <!-- menu latéral -->
+    <nav id="lateralNav">menu latéral</nav>
+</div>
 </body>
 </html>

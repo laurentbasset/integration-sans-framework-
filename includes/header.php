@@ -1,3 +1,1 @@
-<header id="header">
-<h1>Titre du site</h1>
-</header>
+<h1>Header</h1>
