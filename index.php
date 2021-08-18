@@ -29,7 +29,7 @@
         include 'includes/home.php';
     }
     ?>
-
+    <?php include 'includes/mainNav.php'; ?>
     <?php include 'includes/footer.php'; ?>
 </div>
     
