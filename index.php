@@ -13,7 +13,7 @@
     <link  href="/css/reset.css" rel="stylesheet">
     <link  href="css/styles.css" rel="stylesheet">
 
-    <title>Le Crédit Lédonien</title>
+    <title>Le Crédit Lédonien [ALain]</title>
 </head>
 <body>
 <div id="wrapper">
