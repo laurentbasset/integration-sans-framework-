@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,13 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <!-- styles CSS -->
+    <link  href="/css/fonts.css" rel="stylesheet">
     <link  href="css/styles.css" rel="stylesheet">
 
     <title>Le Crédit Lédonien</title>
 </head>
 <body>
+
     <?php include 'includes/header.php'; ?>
 
     <?php
