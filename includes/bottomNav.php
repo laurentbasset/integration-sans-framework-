@@ -1,1 +1,1 @@
-<nav id="bottomNav">bottom nav</nav>
+<nav>bottom nav</nav>
