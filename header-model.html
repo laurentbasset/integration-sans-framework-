@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @font-face {
+            font-family: 'opensans';
+            src: url(../integration-sans-framework--main/fonts/OpenSans-Light.ttf)
+        }
+
+         *{
+        box-sizing: border-box;
+        }
+        #header{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            font-family: 'opensans';
+        }
+        #left{
+            flex: 50%;
+            padding:5px
+        }
+        #right{
+            flex: 50%; 
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        #wrpLogo{
+            display: inline-block;
+            
+            width:120px;
+
+        }
+        #wrpLogo img {
+            width: 100%;
+        } 
+        /* Responsive layout - makes a one column-layout instead of a two-column layout */
+        @media (max-width: 960px) {
+            #left, #right {
+                flex: 100%;
+                
+            }
+            #header{ 
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="left">
+            <div id="wrpLogo"><img src="img/imageCL.jpg" alt="logo"></div>
+        </div>
+        <div id="right">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, tenetur.<br>
+            Dolores aut ipsa dignissimos tempora!</div>
+    </header>
+
+
+
+</body>
+</html>

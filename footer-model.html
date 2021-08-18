@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @font-face {
+            font-family: 'opensans';
+            src: url(../integration-sans-framework--main/fonts/OpenSans-Light.ttf)
+        }
+
+        @font-face {
+            font-family: 'opensansbd';
+            src: url(../integration-sans-framework--main/fonts/OpenSans-SemiBold.ttf)
+        }
+    
+        #footer{
+
+            display: flex;
+            flex-direction: row;
+            background: #001d26;
+            color: white;
+            font-family: 'opensans';
+            padding-bottom: 20px;
+
+        }
+    
+
+        #item-footer-1{
+
+            flex: 25%;
+            padding-left:60px;
+            padding-top: 20px;
+            
+            
+            
+        }
+        #wrapLogoWhite{
+
+            display: inline-block;
+            width:120px;
+        }
+        
+        #wrapLogoWhite img{
+
+            width: 100%;
+            
+        }
+
+        #item-footer-2{
+
+            flex: 25%;
+            padding-left: 30px;
+            display: flex;
+            align-items: flex-end;
+            
+            
+        }
+
+        #item-footer-3{
+
+            flex: 50%;
+            padding-right: 60px;
+            text-align: right;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+        }
+
+        #Acslons{
+
+        color: #008090;
+        font-family: 'opensansbd';
+        text-decoration: none;
+
+        }
+
+        @media (max-width: 960px) {
+            #footer {
+            flex-direction: column;
+            
+            
+
+            }
+            #item-footer-1, #item-footer-2, #item-footer-3{
+            
+                text-align: center;
+                justify-content: center;
+                padding: 10px;
+                
+            }
+           
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <footer id="footer">
+
+        <div id="item-footer-1">
+            <div id="wrapLogoWhite">
+                <img src="img/imageCL.jpg">
+            </div>
+            <p>Un crédit vous engage et doit être remboursé.<br> 
+            Vérifiez vos capacités de remboursementavant de vous engager.</p>
+        </div>
+        <div id="item-footer-2">
+            <p> 1 place de la République <br>
+            39000 Lons le Saunier<br>
+            Tél : + 33 (0) 3 84 12 56 89 <br>
+            contact@lecreditledonien.fr<br> 
+                
+            
+        </div>
+        <div id="item-footer-3"><p> Mentions légales <br>
+                Politique de confidentialité <br>
+                Une réalisation<a href="https://www.accesscodeschool.fr/" target="blank" id="Acslons"> ACS Lons le Saunier</a></div>
+                
+    
+    </footer>
+    
+</body>
+</html>
