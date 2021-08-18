@@ -11,7 +11,7 @@
     <!-- styles CSS -->
     <link  href="css/styles.css" rel="stylesheet">
 
-    <title>Le Crédit Lédonien : Accueil</title>
+    <title>Le Crédit Lédonien</title>
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
