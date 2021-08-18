@@ -1,3 +1,3 @@
-<?php
-echo '<header>je suis le header</header>';
-?>
+<header>
+<h1>Titre du site</h1>
+</header>

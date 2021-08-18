@@ -15,7 +15,18 @@
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
-    <?php include 'includes/home.php'; ?>
+
+    <?php
+    if (!empty($_GET['page'])) {
+            switch ($_GET['page']) {
+            case 'about': include 'includes/about.php'; break;
+            default : include 'includes/home.php';
+            }
+    }else{
+        include 'includes/home.php';
+    }
+    ?>
+
     <?php include 'includes/footer.php'; ?>
     
 </body>

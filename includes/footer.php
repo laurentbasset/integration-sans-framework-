@@ -1,3 +1,4 @@
-<?php
- echo '<footer>je suis le footer</footer>';
-?>
+<footer>
+    <hr>
+    <em>un super site</em>
+</footer>
