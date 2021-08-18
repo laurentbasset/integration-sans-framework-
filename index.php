@@ -17,15 +17,16 @@
 </head>
 <body>
 <div id="wrapper">
+
     <!-- début de la page -->
     <div id="page">
         <!-- header -->
         <header id="header">
             <?php include 'includes/header.php'; ?>
-            </header>
+        </header>
 
-            <!-- debut du main -->
-            <main id="main">
+        <!-- debut du main -->
+        <main id="main">
             <?php
             if (!empty($_GET['page'])) {
                     switch ($_GET['page']) {
@@ -41,7 +42,7 @@
 
             <!-- navigation du bas -->
             <nav id="bottomNav">
-            <?php include 'includes/bottomNav.php'; ?>
+                <?php include 'includes/bottomNav.php'; ?>
             </nav>
             
             
@@ -54,6 +55,7 @@
     
     <!-- menu latéral -->
     <nav id="lateralNav">menu latéral</nav>
+
 </div>
 </body>
 </html>
