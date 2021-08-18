@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,7 @@
     <title>Le Crédit Lédonien</title>
 </head>
 <body>
+<div id="wrapper">
 
     <?php include 'includes/header.php'; ?>
 
@@ -30,6 +31,7 @@
     ?>
 
     <?php include 'includes/footer.php'; ?>
+</div>
     
 </body>
 </html>

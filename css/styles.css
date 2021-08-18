@@ -5,9 +5,32 @@ body, html {
 }
 
 body{
+    position: relative;
     font-family:'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, strong {
     font-family: 'OpenSans Semi Bold', sans-serif !important;
+}
+
+#wrapper {
+    border: 1px dotted black;
+    position: relative;
+    margin: auto;
+    max-width: 1440px;
+}
+
+/* HEADER */
+#header{
+    border: 1px dotted red;
+}
+
+/* MAIN */
+#main{
+    border: 1px dotted blue;
+}
+
+/* FOOTER */
+#footer{
+    border: 1px dotted green;
 }
