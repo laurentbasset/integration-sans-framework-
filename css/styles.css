@@ -14,29 +14,29 @@ a:hover {
 }
 
 #wrapper {
-    /* border: 1px dotted black; */
+    border: 1px dotted black;
     position: relative;
     margin: auto;
     max-width: 1280px;
     display: flex;
     align-items: stretch;
-    
 }
 
 #page{
     flex-grow:15;
 }
 
-/* HEADER */
+/*//////////////////////////////////// HEADER */
 #header{
-    /* border: 1px dotted red; */
+    border: 1px dotted red;
     display: flex;
     align-items: center;
 }
 
 #leftHeader{
     flex: 50%;
-    padding:5px
+    padding:5px;
+    padding-left:60px;
 }
 
 #rightHeader{
@@ -48,19 +48,23 @@ a:hover {
 #wrpLogo{
     display: inline-block;
     width:120px;
-    padding-left: 60px
+    /* padding-left: 60px; */
 }
 
 #wrpLogo img {
     width: 100%;
 } 
 
-/* MAIN */
+/*//////////////////////////////////// MAIN */
 #main{
     border: 1px dotted blue;
 }
-/* CSS Yamina */
-/* Description paragraph*/
+
+.articleHome {
+    display: flex;
+    flex-direction: row;
+    font-size: 15 px;
+}
 
 .articleHome p{
     color: #5b5c5e;
@@ -71,81 +75,62 @@ a:hover {
     font-size: 40px;
   }
 
-  .offre{
+.offre{
     font-family: 'OpenSans SemiBold';
     color: #5b5c5e;
-  }
+}
 
-  .duree{
+.duree{
     font-family: 'Open Sans' , sans-serif;
     font-size: 18px;
     color: #5b5c5e;
-  }
+}
 
-  .button{
+.button{
     background-color: #007f8f;
+    font-size: 16px;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    /* font-family: 'Open Sans'; */
     margin: 4px 2px;
     cursor: pointer;
-  }
-
-  .btnDecouvrir{
-    font-size: 18px;
-  }
-  
-  .btnSavoirPlus{
-    font-size: 16px;
-  } 
+}
 
 .txtBold{
   font-family: 'OpenSans SemiBold';
   color: #001d26;
 }
-* {
+
+*{
     box-sizing: border-box;
-  }
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    font-size: 15 px;
-  }
-  .blocTxtHome{
+}
+
+.blocTxtHome{
     padding: 10px;
-  }
+}
   
-  .flex-item-left {
+.flex-item-left {
     border: 1px dotted red;
     flex:33%;
-  }
-  .flex-item-right {
+}
+
+.flex-item-right {
     border: 1px dotted blue;
     padding: 10px;
     flex:66%;
-  }
-  .wrpImgMonnaie{
+}
+/*//////////////////////////////////// ?????image à regler */
+.wrpImgMonnaie{
     
   }
   .wrpImgMonnaie img{
     width: 100%;
     object-fit: cover;
   }
-  /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 960px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
-/*fin css Ymina*/
 
-
-
-/* FOOTER */
+/*//////////////////////////////////// FOOTER */
 #footer{
     border: 1px dotted green;
     display: flex;
@@ -214,7 +199,7 @@ a:hover {
     color: #008090;
 }
 
-@media screen and (max-width: 960px) { /* voir pour passer à 812 px */
+@media screen and (max-width: 960px) { /*       voir pour passer à 812 px */
     #lateralNav{ display: none; }
 
     #header{ 
@@ -240,4 +225,9 @@ a:hover {
         width: 100%;
        
     }
+
+    .articleHome {
+      flex-direction: column;
+    }
+  }
 }

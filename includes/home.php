@@ -1,10 +1,10 @@
-    <article class="articleHome flex-container">
+        <article class="articleHome">
             <section class="flex-item-left blocTxtHome">
                 <h2>Prêt Personnel<br>multi-projets </h2>
                 <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
                 Offre valable jusqu'au 31/08/2021</p>
                 <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
-                <button class=" button btnDecouvrir ">Découvrir</button>
+                <button class=" button">Découvrir</button>
                 
             </section>
             <section class="flex-item-right">
@@ -49,6 +49,6 @@
                 <p>
                     Au service de nos clients, nous facilitons l’accès à une consommation plus responsable et plus durable. Alors soyons toujours plus responsables, ensemble.
                 </p>
-                <button class="button btnSavoirPlus">En savoir plus</button>  
+                <button class="button">En savoir plus</button>  
             </section>
         </article>
