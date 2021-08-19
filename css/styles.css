@@ -144,7 +144,52 @@ a:hover {
   }
 /*fin css Ymina*/
 
+/* ABOUT */
+*{
+  box-sizing: border-box;
+  }
 
+  #about{
+      display: flex;
+      border: 1px dotted black;
+      flex-direction: column;
+  }
+
+  #topAbout{
+      border: 1px dotted red;
+        
+                      
+  }
+
+  #imageAbout{
+      display: inline-block;
+      width: 100%;       
+                      
+  }
+
+  #imageAbout img{
+      height: 100%; 
+      width: 100%;
+      object-fit: cover;
+  }
+
+  #bottomAbout{
+      border: 1px dotted blue;
+      display: flex;
+      flex-direction: row;
+  }
+
+  #leftAbout{
+      padding-left: 5vh;;
+      border: 1px dotted rgb(47, 128, 0);
+      flex:66%;
+  }
+
+  #rightAbout{
+      border: 1px dotted rgb(255, 255, 0);
+      flex:33%; 
+  }
+/* FIN ABOUT */
 
 /* FOOTER */
 #footer{
@@ -233,7 +278,10 @@ a:hover {
         
     }
 
-
+    #bottomAbout {
+      flex-direction: column-reverse;
+      }
+      
     #footer {
         flex-direction: column;
     }
@@ -249,4 +297,6 @@ a:hover {
         width: 100%;
        
     }
+
+
 }
