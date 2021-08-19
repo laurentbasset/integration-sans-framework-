@@ -29,10 +29,11 @@
         </article>
 
         <article class="articleHome flex-container">
-            <section class="flex-item-left">
-                <figure class="wrpImgMonnaie"><img src="img/money-2724235_1920.jpg" alt="image monnaie"></figure>
-               
-            </section>
+           
+            <figure class="wrpImgMonnaie flex-item-left">
+                <img src="img/money-2724235_1920.jpg" alt="image monnaie">
+            </figure>
+         
             <section class="flex-item-right blocTxtHome">
                 <h2>Le crédit responsable par le Crédit Lédonien</h2>
                 <p>

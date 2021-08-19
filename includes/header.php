@@ -1,5 +1,5 @@
 <div id="leftHeader">
-    <div id="wrpLogo"><img src="img/imageCL.jpg" alt="logo"></div>
+    <div id="wrpLogo"><a href="?page=home"><img src="img/imageCL.jpg" alt="logo"></a></div>
 </div>
 
 <div id="rightHeader">
