@@ -1,21 +1,20 @@
 @charset "UTF-8";
 
 body{
-    position: relative;
     font-family:'Open Sans', sans-serif;
 }
-a:link, :visited, :active{
+a:link, a:visited, a:active{
     color: #008090;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: rgb(57, 181, 197);
     text-decoration: none;
 }
 
 #wrapper {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     position: relative;
     margin: auto;
     max-width: 1280px;
@@ -103,8 +102,6 @@ a:hover{
     justify-content: flex-end;
 }
 
-
-
 /* NAVIGATIONS */
 #lateralNav{
     writing-mode: vertical-rl;
@@ -120,12 +117,14 @@ a:hover{
     background-color: #1a353e;
     padding:15px;
 }
-#bottomNav a:link, :visited, :active {
+ 
+#bottomNav a:link, a:visited, a:active {
     font-family: "ERASBD";
     color:white;
     text-decoration: none;
     padding-inline: 10px;
 }
+
 #bottomNav a:hover {
     color: #008090;
 }
