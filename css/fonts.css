@@ -3,6 +3,13 @@
     font-family: "ERASBD";
     src: url(../fonts/ERASBD.TTF);
 }
+
+@font-face{
+    font-family: 'ERAS BOLD';
+    src: url(../fonts/ErasBoldITC.ttf);
+  }
+  
+
 @font-face {
     font-family: 'Open Sans';
     src: url(../fonts/OpenSans-Regular.ttf),
