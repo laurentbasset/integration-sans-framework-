@@ -117,6 +117,17 @@ a:hover{
 #bottomNav {
     text-align: center;
     border:1px dotted palevioletred;
+    background-color: #1a353e;
+    padding:15px;
+}
+#bottomNav a:link, :visited, :active {
+    font-family: "ERASBD";
+    color:white;
+    text-decoration: none;
+    padding-inline: 10px;
+}
+#bottomNav a:hover {
+    color: #008090;
 }
 
 @media screen and (max-width: 960px) { /* voir pour passer à 812 px */
