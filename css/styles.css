@@ -30,7 +30,7 @@ a:hover{
 
 /* HEADER */
 #header{
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
     display: flex;
     align-items: center;
 }
@@ -49,6 +49,7 @@ a:hover{
 #wrpLogo{
     display: inline-block;
     width:120px;
+    padding-left: 60px
 }
 
 #wrpLogo img {
@@ -77,13 +78,12 @@ a:hover{
 
 }
 
-#wrapLogoWhite{
+#wrapLogoBottom{
     display: inline-block;
     width:120px;
-
 }
 
-#wrapLogoWhite img{
+#wrapLogoBottom img{
     width: 100%;
 }
 
@@ -132,25 +132,28 @@ a:hover{
 
 @media screen and (max-width: 960px) { /* voir pour passer à 812 px */
     #lateralNav{ display: none; }
-    #bottomNav{ 
-        position:fixed;
-        bottom: 0;
-        width: 100%;
-       
+
+    #header{ 
+        text-align: center;
     }
     #leftHeader, #rightHeader {
         flex: 100%;
         
     }
-    #header{ 
-        text-align: center;
-    }
+
     #footer {
         flex-direction: column;
-        }
+    }
     #itemFooter1, #itemFooter2, #itemFooter3{
         text-align: center;
         justify-content: center;
         padding: 10px;  
+    }
+
+    #bottomNav{ 
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+       
     }
 }

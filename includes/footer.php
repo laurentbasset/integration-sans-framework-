@@ -1,5 +1,5 @@
 <div id="itemFooter1">
-     <div id="wrapLogoWhite">
+     <div id="wrapLogoBottom">
                 <img src="img/imageCL.jpg">
     </div>
     <p>Un crédit vous engage et doit être remboursé.<br> 
