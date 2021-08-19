@@ -4,10 +4,14 @@ body{
     position: relative;
     font-family:'Open Sans', sans-serif;
 }
+a:link, :visited, :active{
+    color: #008090;
+    text-decoration: none;
+}
 
-h1, h2, h3, h4, h5, h6, strong {
-    font-family: 'OpenSans SemiBold', sans-serif !important;
-    line
+a:hover{
+    color: rgb(57, 181, 197);
+    text-decoration: none;
 }
 
 #wrapper {
@@ -26,7 +30,29 @@ h1, h2, h3, h4, h5, h6, strong {
 /* HEADER */
 #header{
     border: 1px dotted red;
+    display: flex;
+    align-items: center;
 }
+
+#leftHeader{
+    flex: 50%;
+    padding:5px
+}
+
+#rightHeader{
+    flex: 50%; 
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#wrpLogo{
+    display: inline-block;
+    width:120px;
+}
+
+#wrpLogo img {
+    width: 100%;
+} 
 
 /* MAIN */
 #main{
@@ -36,7 +62,47 @@ h1, h2, h3, h4, h5, h6, strong {
 /* FOOTER */
 #footer{
     border: 1px dotted green;
+    display: flex;
+    flex-direction: row;
+    background: #001d26;
+    color: white;
+    padding-bottom: 20px;
+
 }
+#itemFooter1{
+    flex: 25%;
+    padding-left:60px;
+    padding-top: 20px; 
+
+}
+
+#wrapLogoWhite{
+    display: inline-block;
+    width:120px;
+
+}
+
+#wrapLogoWhite img{
+    width: 100%;
+}
+
+#itemFooter2{
+    flex: 25%;
+    padding-left: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#itemFooter3{
+    flex: 50%;
+    padding-right: 60px;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
 
 /* NAVIGATIONS */
 #lateralNav{
@@ -58,5 +124,21 @@ h1, h2, h3, h4, h5, h6, strong {
         position:fixed;
         bottom: 0;
         width: 100%;
+       
     }
-  }
+    #leftHeader, #rightHeader {
+        flex: 100%;
+        
+    }
+    #header{ 
+        text-align: center;
+    }
+    #footer {
+        flex-direction: column;
+        }
+    #itemFooter1, #itemFooter2, #itemFooter3{
+        text-align: center;
+        justify-content: center;
+        padding: 10px;  
+    }
+}

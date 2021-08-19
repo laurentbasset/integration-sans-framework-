@@ -3,6 +3,6 @@
 </div>
 
 <div id="rightHeader">
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, tenetur.<br>
-Dolores aut ipsa dignissimos tempora!
+    <p>Un crédit vous engage et doit être remboursé.<br> 
+    Vérifiez vos capacités de remboursementavant de vous engager.</p>
 </div>
