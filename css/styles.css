@@ -20,7 +20,6 @@ a:active{
     text-decoration: none;
 }
 
-
 #wrapper {
     border: 1px dotted black;
     position: relative;
@@ -81,7 +80,7 @@ a:active{
 .rate{
     color: #008090;
     font-size: 40px;
-  }
+}
 
 .offre{
     font-family: 'OpenSans SemiBold';
@@ -130,9 +129,7 @@ a:active{
     flex:66%;
 }
 /*//////////////////////////////////// ?????image à regler */
-.wrpImgMonnaie{
-  }
-  .wrpImgMonnaie img{
+.wrpImgMonnaie img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -147,8 +144,8 @@ a:active{
     background: #001d26;
     color: white;
     padding-bottom: 20px;
-
 }
+
 #itemFooter1{
     flex: 25%;
     padding-left:60px;
@@ -187,7 +184,6 @@ a:active{
     text-orientation: mixed; 
     border: 1px dotted palevioletred;
     flex-grow: 1;
-    
 }
  
 #bottomNav {
@@ -220,14 +216,24 @@ a:active{
     #header{ 
         text-align: center;
     }
-    #leftHeader, #rightHeader {
-        flex: 100%;
-        
+
+    #header{ 
+        text-align: center;
+        display: block;
     }
 
+    #leftHeader, #rightHeader {
+        flex: 100%;
+    }
+
+    #bottomAbout {
+      flex-direction: column-reverse;
+    }
+      
     #footer {
         flex-direction: column;
     }
+
     #itemFooter1, #itemFooter2, #itemFooter3{
         text-align: center;
         justify-content: center;
@@ -244,5 +250,4 @@ a:active{
     .articleHome {
       flex-direction: column;
     }
-  }
 }
