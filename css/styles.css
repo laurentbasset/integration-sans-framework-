@@ -146,48 +146,56 @@ a:hover {
 
 /* ABOUT */
 *{
-  box-sizing: border-box;
-  }
+    box-sizing: border-box;
+    }
 
-  #about{
-      display: flex;
-      border: 1px dotted black;
-      flex-direction: column;
-  }
+    #about{
+        display: flex;
+        border: 1px dotted black;
+        flex-direction: column;
+    }
 
-  #topAbout{
-      border: 1px dotted red;
+    #topAbout{
+        border: 1px dotted red;  
+        display: flex; 
+                
+    }
+
+     #imageAbout{
+        width: 100%;
+        position: relative;    
+    }
+
+    #imageAbout img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0% 80%;
         
-                      
-  }
+    } 
+    
+    #TitreSurImage{
+        position: absolute;
+        color: white;
+    }
 
-  #imageAbout{
-      display: inline-block;
-      width: 100%;       
-                      
-  }
+    #bottomAbout{
+        border: 1px dotted blue;
+        display: flex;
+        flex-direction: row;
+    }
 
-  #imageAbout img{
-      height: 100%; 
-      width: 100%;
-      object-fit: cover;
-  }
+    #leftAbout{
+        padding-left: 8vh;
+        padding-right: 2vh ;
+        border: 1px dotted rgb(47, 128, 0);
+        flex:55%;
+    }
 
-  #bottomAbout{
-      border: 1px dotted blue;
-      display: flex;
-      flex-direction: row;
-  }
-
-  #leftAbout{
-      padding-left: 5vh;;
-      border: 1px dotted rgb(47, 128, 0);
-      flex:66%;
-  }
-
-  #rightAbout{
-      border: 1px dotted rgb(255, 255, 0);
-      flex:33%; 
+    #rightAbout{
+        border: 1px dotted rgb(255, 255, 0);
+        flex:45%; 
+    } 
   }
 /* FIN ABOUT */
 
