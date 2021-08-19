@@ -32,11 +32,12 @@ a:hover{
     border: 1px dotted red;
     display: flex;
     align-items: center;
+    
 }
 
 #leftHeader{
     flex: 50%;
-    padding:5px
+    padding: 5px;
 }
 
 #rightHeader{
@@ -126,12 +127,10 @@ a:hover{
         width: 100%;
        
     }
-    #leftHeader, #rightHeader {
-        flex: 100%;
-        
-    }
+    
     #header{ 
         text-align: center;
+        display: block;
     }
     #footer {
         flex-direction: column;

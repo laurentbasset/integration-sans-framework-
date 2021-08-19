@@ -1,6 +1,6 @@
 <div id="itemFooter1">
      <div id="wrapLogoWhite">
-                <img src="img/imageCL.jpg">
+        <img src="img/imageNoirBlanc.jpg">
     </div>
     <p>Un crédit vous engage et doit être remboursé.<br> 
     Vérifiez vos capacités de remboursementavant de vous engager.</p>
