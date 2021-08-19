@@ -9,8 +9,8 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <!-- styles CSS -->
-    <link  href="/css/fonts.css" rel="stylesheet">
-    <link  href="/css/reset.css" rel="stylesheet">
+    <link  href="css/fonts.css" rel="stylesheet">
+    <link  href="css/reset.css" rel="stylesheet">
     <link  href="css/styles.css" rel="stylesheet">
 
     <title>Le Crédit Lédonien</title>
