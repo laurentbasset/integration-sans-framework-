@@ -3,7 +3,7 @@
 body{
     font-family:'Open Sans', sans-serif;
 }
-a:link {
+a:link, a:visited, a:active {
     color: #008090;
     text-decoration: none;
 }
@@ -11,17 +11,8 @@ a:hover {
     color: rgb(57, 181, 197);
     text-decoration: none;
 }
-a:visited{
-    color: #008090;
-    text-decoration: none;
-}
-a:active{
-    color: #008090;
-    text-decoration: none;
-}
 
 #wrapper {
-    border: 1px dotted black;
     position: relative;
     margin: auto;
     max-width: 1280px;
@@ -35,15 +26,14 @@ a:active{
 
 /*//////////////////////////////////// HEADER */
 #header{
-    border: 1px dotted red;
     display: flex;
     align-items: center;
 }
 
 #leftHeader{
     flex: 50%;
-    padding:5px;
-    padding-left:60px;
+    /* padding:5px; */
+    padding:20px 60px 20px 20px;
 }
 
 #rightHeader{
@@ -55,7 +45,6 @@ a:active{
 #wrpLogo{
     display: inline-block;
     width:120px;
-    /* padding-left: 60px; */
 }
 
 #wrpLogo img {
@@ -63,8 +52,22 @@ a:active{
 } 
 
 /*//////////////////////////////////// MAIN */
+*{
+    box-sizing: border-box;
+}
+
 #main{
     border: 1px dotted blue;
+}
+
+.flex-item-left {
+    border: 1px dotted purple;
+    flex:40%;
+}
+
+.flex-item-right {
+    border: 1px dotted purple;
+    flex:60%;
 }
 
 .articleHome {
@@ -75,6 +78,10 @@ a:active{
 
 .articleHome p{
     color: #5b5c5e;
+}
+
+.blocTxtHome{
+    padding: 20px;
 }
 
 .rate{
@@ -110,25 +117,6 @@ a:active{
   color: #001d26;
 }
 
-*{
-    box-sizing: border-box;
-}
-
-.blocTxtHome{
-    padding: 10px;
-}
-  
-.flex-item-left {
-    border: 1px dotted red;
-    flex:33%;
-}
-
-.flex-item-right {
-    border: 1px dotted blue;
-    padding: 10px;
-    flex:66%;
-}
-/*//////////////////////////////////// ?????image à regler */
 .wrpImgMonnaie img{
     width: 100%;
     height: 100%;
@@ -136,9 +124,60 @@ a:active{
     object-position: 90% 100%;
 }
 
+/* simulateur */
+#sim{
+    position:relative;
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 2px 7px grey;
+    width: 400px;
+    height: 400px;
+    padding-top:5px;
+    padding-inline:15px;
+}
+
+#menuSim{
+    position:relative;
+    align-self: center;
+    width: 100%;
+    background-color: white;
+    line-height: 100%;
+}
+#titleSim{
+    font-family:'ERASBD', sans-serif;
+    font-size:36px;
+    line-height: 90%;
+    margin:0;
+}
+#subTitle{
+    font-family:'OpenSans Light', sans-serif;
+}
+.btSim{
+    display: flex;
+    background-color: #008090;
+    color:white;
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-block: 5px;
+    margin-bottom:10px;
+    line-height: 50%;
+    align-items: center;
+}
+.leftBt{
+    flex-grow: 2;
+    margin-left: 35px;
+}
+.titleBtSim{
+    font-family:'ErasBD', sans-serif;
+}
+.txtSim{
+    font-family:'OpenSans Light', sans-serif;
+}
+.arrow{ padding-right: 40px; }
+.arrow img{ height:50px; }
+
 /*//////////////////////////////////// FOOTER */
 #footer{
-    border: 1px dotted green;
     display: flex;
     flex-direction: row;
     background: #001d26;
@@ -149,8 +188,7 @@ a:active{
 #itemFooter1{
     flex: 25%;
     padding-left:60px;
-    padding-top: 20px; 
-
+    padding-top: 20px;
 }
 
 #wrapLogoBottom{
@@ -192,12 +230,6 @@ a:active{
     background-color: #1a353e;
     padding:15px;
 }
-.linkNavBottom a:link {
-    font-family: "ERASBD";
-    color:white;
-    text-decoration: none;
-    /* padding-inline: 10px; */
-}
 
 #bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
     font-family: "ERASBD";
@@ -224,6 +256,7 @@ a:active{
 
     #leftHeader, #rightHeader {
         flex: 100%;
+        padding:0 !important;
     }
 
     #bottomAbout {
@@ -243,8 +276,7 @@ a:active{
     #bottomNav{ 
         position:fixed;
         bottom: 0;
-        width: 100%;
-       
+        width: 100%
     }
 
     .articleHome {
