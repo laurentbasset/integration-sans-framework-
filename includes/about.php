@@ -1,8 +1,13 @@
 <div id="about">
+<div id="about">
             <div id="topAbout">
 
-                <figure id="imageAbout"><img src="img/money-2724235_1920.jpg" alt="money" ></figure>
-
+                <figure id="imageAbout"> 
+                    <img src="img/money-2724235_1920.jpg" alt="money" >
+                    <div id="TitreSurImage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, minus?</div>
+                </figure>
+                
+                
             </div>
             <div id="bottomAbout">
 
@@ -38,7 +43,10 @@
                         <p>Parce que chaque besoin de financement est différent, Cetelem s’engage chaque jour à vous accompagner afin de vous proposer une solution adaptée à votre situation.</p><br>
                         
                     </article>
-                    </div>
+                </div>
+                <div id="rightAbout">SIMULATEUR</div>
+            </div>
+        </div>
                 <div id="rightAbout">SIMULATEUR</div>
             </div>
         </div>
