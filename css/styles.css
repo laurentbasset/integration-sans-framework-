@@ -32,8 +32,7 @@ a:hover {
 
 #leftHeader{
     flex: 50%;
-    /* padding:5px; */
-    padding:20px 60px 20px 20px;
+    padding: 20px 20px 20px 60px ;
 }
 
 #rightHeader{
@@ -125,56 +124,31 @@ a:hover {
 }
 
 /* simulateur */
-#sim{
-    position:relative;
+#containerSimulateur{
     display: flex;
-    background-color: white;
+    justify-content: center;
+}
+#simulateur{
     box-shadow: 2px 2px 7px grey;
     width: 400px;
     height: 400px;
-    padding-top:5px;
-    padding-inline:15px;
-}
-
-#menuSim{
-    position:relative;
-    align-self: center;
-    width: 100%;
-    background-color: white;
-    line-height: 100%;
-}
-#titleSim{
-    font-family:'ERASBD', sans-serif;
-    font-size:36px;
-    line-height: 90%;
-    margin:0;
-}
-#subTitle{
-    font-family:'OpenSans Light', sans-serif;
+    padding:15px;
 }
 .btSim{
     display: flex;
-    background-color: #008090;
-    color:white;
-    padding-left: 25px;
-    padding-right: 30px;
-    padding-block: 5px;
-    margin-bottom:10px;
-    line-height: 50%;
     align-items: center;
+    width: 350px;
+    background-color: #008090;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 0;
 }
-.leftBt{
-    flex-grow: 2;
-    margin-left: 35px;
+.wrpArrow {
+    height: 30px;
 }
-.titleBtSim{
-    font-family:'ErasBD', sans-serif;
+.wrpArrow img {
+    height: 100%;
 }
-.txtSim{
-    font-family:'OpenSans Light', sans-serif;
-}
-.arrow{ padding-right: 40px; }
-.arrow img{ height:50px; }
 
 /*//////////////////////////////////// FOOTER */
 #footer{

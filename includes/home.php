@@ -10,38 +10,8 @@
             </section>
             
             <!-- simulateur -->
-            <section id="simulateur" class="flex-item-right">
-            simulateur
-            <!-- <div id="menuSim">
-                
-                <p id="titleSim">Simulation de crédits en ligne</p>
-                <p id="subTitle">Quel type de crédit souhaitez-vous réaliser ?</p>
-                <div class="btSim">
-                    <div class="leftBt">
-                        <h2 class="titleBtSim">Prêt personnel</h2>
-                        <p class="txtSim">Un crédit à partir de 5000 €</p>
-                    </div>
-                    <div class="arrow"><img src="img/arrow.svg" alt="arrow"></div>
-                    
-                </div>
-
-                <div class="btSim">
-                    <div class="leftBt">
-                        <h2 class="titleBtSim">crédit renouvelable</h2>
-                        <p class="txtSim">Un crédit jusqu'à 3000 €</p>
-                    </div>
-                    <div class="arrow"><img src="img/arrow.svg" alt="arrow"></div>
-                </div>
-
-                <div class="btSim">
-                    <div class="leftBt">
-                        <h2 class="titleBtSim">Rachat de crédit</h2>
-                        <p class="txtSim">Regroupez tous vos crédits en un seul</p>
-                    </div>
-                    <div class="arrow"><img src="img/arrow.svg" alt="arrow"></div>
-                </div>
-            
-            </div> -->
+            <section class="flex-item-right" id="containerSimulateur">
+            <?php include 'simulateur.php' ?>
             </section> 
             
         </article>
