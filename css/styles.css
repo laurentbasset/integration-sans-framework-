@@ -51,10 +51,6 @@ a:hover {
 } 
 
 /*//////////////////////////////////// MAIN */
-*{
-    box-sizing: border-box;
-}
-
 #main{
     border: 1px dotted blue;
 }
@@ -65,7 +61,6 @@ a:hover {
 }
 
 .flex-item-right {
-    border: 1px dotted purple;
     flex:60%;
 }
 
@@ -75,12 +70,13 @@ a:hover {
     font-size: 15 px;
 }
 
-.articleHome p{
+.blocTxtHome{
+    padding: 20px;
     color: #5b5c5e;
 }
 
-.blocTxtHome{
-    padding: 20px;
+.blocTxtHome h2 {
+    color:black;
 }
 
 .rate{
@@ -127,21 +123,28 @@ a:hover {
 #containerSimulateur{
     display: flex;
     justify-content: center;
+   
 }
 #simulateur{
-    box-shadow: 2px 2px 7px grey;
+    box-shadow: 4px 6px 9px grey;
     width: 400px;
     height: 400px;
-    padding:15px;
+    padding:25px;
 }
 .btSim{
+    background-color: #008090;
+    color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 350px;
-    background-color: #008090;
     margin-bottom: 20px;
     cursor: pointer;
     border: 0;
+    padding: 15px 35px;
+}
+.ctnBtLeft{
+    text-align: left;;
 }
 .wrpArrow {
     height: 30px;

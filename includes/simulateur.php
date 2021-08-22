@@ -1,27 +1,27 @@
 <div id="simulateur">
-    <p>Simulation de crédits en ligne</p>
-    <p>Quel type de crédit souhaitez-vous réaliser ?</p>
+    <h2>Simulation de crédits en ligne</h2>
+    <p  style="color:#5b5c5e">Quel type de crédit souhaitez-vous réaliser ?</p>
 
-    <button  class="btSim">
-        <div>
+    <button  class="btSim" id="btPretPerso">
+        <div class="ctnBtLeft">
             <h3>Prêt personnel</h3>
-            <p>Un crédit à partir de 5000 €</p>
+            <span>Un crédit à partir de 5000 €</span>
         </div>
         <div class="wrpArrow"><img src="img/arrow.svg" alt="arrow"></div>                    
     </button>
 
     <button  class="btSim">
-        <div>
+        <div class="ctnBtLeft">
             <h3>crédit renouvelable</h3>
-            <p>Un crédit jusqu'à 3000 €</p>
+            <span>Un crédit jusqu'à 3000 €</span>
         </div>
         <div class="wrpArrow"><img src="img/arrow.svg" alt="arrow"></div>                    
     </button>
 
     <button  class="btSim">
-        <div>
+        <div class="ctnBtLeft">
             <h3>Rachat de crédit</h3>
-            <p>Regroupez tous vos crédits en un seul</p>
+            <span>Regroupez tous vos crédits en un seul</span>
         </div>
         <div class="wrpArrow"><img src="img/arrow.svg" alt="arrow"></div>                    
     </button>

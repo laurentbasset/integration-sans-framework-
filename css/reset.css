@@ -46,6 +46,10 @@ q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 }
+/* Ajouts personalisés */
+*{
+    box-sizing: border-box;
+}
 
 figure{
     margin: 0;
@@ -62,5 +66,4 @@ strong{
 
 h2{
 	font-family: 'ERAS BOLD' , sans-serif !important ;
-	
   }
