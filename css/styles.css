@@ -153,6 +153,10 @@ a:hover {
     height: 100%;
 }
 
+#simCalculPret{
+    display: none;
+}
+
 /*//////////////////////////////////// FOOTER */
 #footer{
     display: flex;
