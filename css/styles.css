@@ -55,6 +55,8 @@ a:hover {
     border: 1px dotted blue;
 }
 
+
+/* Accueil */
 .flex-item-left {
     border: 1px dotted purple;
     flex:40%;
@@ -71,7 +73,7 @@ a:hover {
 }
 
 .blocTxtHome{
-    padding: 20px;
+    padding: 50px;
     color: #5b5c5e;
 }
 
@@ -117,6 +119,62 @@ a:hover {
     height: 100%;
     object-fit: cover;
     object-position: 90% 100%;
+}
+
+/* ABOUT */
+#about{
+    display: flex;
+    flex-direction: column;
+}
+#topAbout{
+    position: relative;
+    margin-bottom: 25px;
+}
+#imageAbout{
+    width: 100%; 
+    height: 45vw;
+}
+
+#imageAbout img{
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 45vw;
+}
+    
+#TitreSurImage{
+    width: 100%;
+    height: 45vw;
+    background-color: rgba(17, 17, 17, 0.507);
+    position: absolute;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+}
+
+#bottomAbout{
+    display: flex;
+    flex-direction: row;
+}
+
+#leftAbout{
+    padding: 50px;
+    color: #5b5c5e;
+    flex:50%;
+}
+#leftAbout section {
+    margin-bottom: 50px;
+}
+
+#leftAbout h2 {
+    color:black;
+}
+
+#rightAbout{
+    flex:50%; 
 }
 
 /* simulateur */
