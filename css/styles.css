@@ -119,6 +119,7 @@ a:hover {
     object-position: 90% 100%;
 }
 
+<<<<<<< HEAD
 /* simulateur */
 #containerSimulateur{
     display: flex;
@@ -158,6 +159,70 @@ a:hover {
 }
 
 /*//////////////////////////////////// FOOTER */
+=======
+/* ABOUT */
+*{
+    box-sizing: border-box;
+    }
+
+    #about{
+        display: flex;
+        border: 1px dotted black;
+        flex-direction: column;
+    }
+
+    #topAbout{
+        border: 1px dotted red;  
+        
+    }
+
+    #imageAbout{
+        width: 100%;
+        position: relative;    
+    }
+
+    #imageAbout img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    } 
+
+    
+    
+    #TitreSurImage{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(128, 128, 128, 0.507);
+        position: absolute;
+        top:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+
+    }
+
+    #bottomAbout{
+        border: 1px dotted blue;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #leftAbout{
+        padding-left: 8vh;
+        padding-right: 2vh ;
+        border: 1px dotted rgb(47, 128, 0);
+        flex:55%;
+    }
+
+    #rightAbout{
+        border: 1px dotted rgb(255, 255, 0);
+        flex:45%; 
+    }
+/* FIN ABOUT */
+
+/* FOOTER */
+>>>>>>> alaedin
 #footer{
     display: flex;
     flex-direction: row;
