@@ -157,10 +157,10 @@ a:hover {
 
     #topAbout{
         border: 1px dotted red;  
-        /* display: flex;             */
+        
     }
 
-     #imageAbout{
+    #imageAbout{
         width: 100%;
         position: relative;    
     }
@@ -170,6 +170,8 @@ a:hover {
         width: 100%;
         object-fit: cover;
     } 
+
+    
     
     #TitreSurImage{
         width: 100%;

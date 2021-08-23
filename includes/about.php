@@ -1,16 +1,11 @@
 <div id="about">
-<div id="about">
             <div id="topAbout">
-
                 <figure id="imageAbout"> 
                     <img src="img/money-2724235_1920.jpg" alt="money" >
                     <div id="TitreSurImage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, minus?</div>
                 </figure>
-                
-                
             </div>
             <div id="bottomAbout">
-
                 <div id="leftAbout">
                     <article>
                         <h2>le Crédit Lédonien plus responsables ensemble.</h2>
@@ -44,10 +39,8 @@
                         
                     </article>
                 </div>
-                <div id="rightAbout">SIMULATEUR</div>
-            </div>
+            <div id="rightAbout">SIMULATEUR</div>
         </div>
-                <div id="rightAbout">SIMULATEUR</div>
-            </div>
-        </div>
+    </div>
+            
 <a href="?page=home">home</a>
