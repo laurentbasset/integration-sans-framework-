@@ -1,15 +1,19 @@
-    <article class="articleHome flex-container">
-            <section class="flex-item-left blocTxtHome">
-                <h2>Prêt Personnel<br>multi-projets </h2>
+        <article class="articleHome">
+            <section class="flex-item-left" id="slideshow">
+                slide show
+                <!-- <h2>Prêt Personnel<br>multi-projets </h2>
                 <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
                 Offre valable jusqu'au 31/08/2021</p>
                 <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
-                <button class=" button btnDecouvrir ">Découvrir</button>
+                <button class=" button">Découvrir</button> -->
                 
             </section>
-            <section class="flex-item-right">
-              <!--Simulateur-->
-            </section>
+            
+            <!-- simulateur -->
+            <section class="flex-item-right" id="containerSimulateur">
+            <?php include 'simulateur.php' ?>
+            </section> 
+            
         </article>
 
         <article class="articleHome flex-container">
@@ -29,10 +33,11 @@
         </article>
 
         <article class="articleHome flex-container">
-            <section class="flex-item-left">
-                <figure class="wrpImgMonnaie"><img src="img/money-2724235_1920.jpg" alt="image monnaie"></figure>
-               
-            </section>
+           
+            <figure class="wrpImgMonnaie flex-item-left">
+                <img src="img/money-2724235_1920.jpg" alt="image monnaie">
+            </figure>
+         
             <section class="flex-item-right blocTxtHome">
                 <h2>Le crédit responsable par le Crédit Lédonien</h2>
                 <p>
@@ -49,6 +54,6 @@
                 <p>
                     Au service de nos clients, nous facilitons l’accès à une consommation plus responsable et plus durable. Alors soyons toujours plus responsables, ensemble.
                 </p>
-                <button class="button btnSavoirPlus">En savoir plus</button>  
+                <button class="button">En savoir plus</button>  
             </section>
         </article>

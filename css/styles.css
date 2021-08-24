@@ -3,40 +3,36 @@
 body{
     font-family:'Open Sans', sans-serif;
 }
-a:link, a:visited, a:active{
+a:link, a:visited, a:active {
     color: #008090;
     text-decoration: none;
 }
-
 a:hover {
     color: rgb(57, 181, 197);
     text-decoration: none;
 }
 
 #wrapper {
-    /* border: 1px dotted black; */
     position: relative;
     margin: auto;
     max-width: 1280px;
     display: flex;
     align-items: stretch;
-    
 }
 
 #page{
     flex-grow:15;
 }
 
-/* HEADER */
+/*//////////////////////////////////// HEADER */
 #header{
-    /* border: 1px dotted red; */
     display: flex;
     align-items: center;
 }
 
 #leftHeader{
     flex: 50%;
-    padding:5px
+    padding: 20px 20px 20px 60px ;
 }
 
 #rightHeader{
@@ -48,118 +44,190 @@ a:hover {
 #wrpLogo{
     display: inline-block;
     width:120px;
-    padding-left: 60px
 }
 
 #wrpLogo img {
     width: 100%;
 } 
 
-/* MAIN */
+/*//////////////////////////////////// MAIN */
 #main{
     border: 1px dotted blue;
 }
-/* CSS Yamina */
-/* Description paragraph*/
 
-.articleHome p{
+
+/* Accueil */
+.flex-item-left {
+    border: 1px dotted purple;
+    flex:40%;
+}
+
+.flex-item-right {
+    flex:60%;
+}
+
+.articleHome {
+    display: flex;
+    flex-direction: row;
+    font-size: 15 px;
+}
+
+.blocTxtHome{
+    padding: 50px;
     color: #5b5c5e;
+}
+
+.blocTxtHome h2 {
+    color:black;
 }
 
 .rate{
     color: #008090;
     font-size: 40px;
-  }
+}
 
-  .offre{
+.offre{
     font-family: 'OpenSans SemiBold';
     color: #5b5c5e;
-  }
+}
 
-  .duree{
+.duree{
     font-family: 'Open Sans' , sans-serif;
     font-size: 18px;
     color: #5b5c5e;
-  }
+}
 
-  .button{
+.button{
     background-color: #007f8f;
+    font-size: 16px;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    /* font-family: 'Open Sans'; */
     margin: 4px 2px;
     cursor: pointer;
-  }
-
-  .btnDecouvrir{
-    font-size: 18px;
-  }
-  
-  .btnSavoirPlus{
-    font-size: 16px;
-  } 
+}
 
 .txtBold{
   font-family: 'OpenSans SemiBold';
   color: #001d26;
 }
-* {
-    box-sizing: border-box;
-  }
-  .flex-container {
+
+.wrpImgMonnaie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 90% 100%;
+}
+
+/* ABOUT */
+#about{
+    display: flex;
+    flex-direction: column;
+}
+#topAbout{
+    position: relative;
+    margin-bottom: 25px;
+}
+#imageAbout{
+    width: 100%; 
+    height: 45vw;
+}
+
+#imageAbout img{
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 45vw;
+}
+    
+#TitreSurImage{
+    width: 100%;
+    height: 45vw;
+    background-color: rgba(17, 17, 17, 0.507);
+    position: absolute;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+}
+
+#bottomAbout{
     display: flex;
     flex-direction: row;
-    font-size: 15 px;
-  }
-  .blocTxtHome{
-    padding: 10px;
-  }
-  
-  .flex-item-left {
-    border: 1px dotted red;
-    flex:33%;
-  }
-  .flex-item-right {
-    border: 1px dotted blue;
-    padding: 10px;
-    flex:66%;
-  }
-  .wrpImgMonnaie{
-    
-  }
-  .wrpImgMonnaie img{
-    width: 100%;
-    object-fit: cover;
-  }
-  /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 960px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
-/*fin css Ymina*/
+}
 
+#leftAbout{
+    padding: 50px;
+    color: #5b5c5e;
+    flex:50%;
+}
+#leftAbout section {
+    margin-bottom: 50px;
+}
 
+#leftAbout h2 {
+    color:black;
+}
 
-/* FOOTER */
+#rightAbout{
+    flex:50%; 
+}
+
+/* simulateur */
+#containerSimulateur{
+    display: flex;
+    justify-content: center;
+   
+}
+#simulateur{
+    box-shadow: 4px 6px 9px grey;
+    width: 400px;
+    height: 400px;
+    padding:25px;
+}
+.btSim{
+    background-color: #008090;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 0;
+    padding: 15px 35px;
+}
+.ctnBtLeft{
+    text-align: left;;
+}
+.wrpArrow {
+    height: 30px;
+}
+.wrpArrow img {
+    height: 100%;
+}
+
+#simCalculPret{
+    display: none;
+}
+
+/*//////////////////////////////////// FOOTER */
 #footer{
-    border: 1px dotted green;
     display: flex;
     flex-direction: row;
     background: #001d26;
     color: white;
     padding-bottom: 20px;
-
 }
+
 #itemFooter1{
     flex: 25%;
     padding-left:60px;
-    padding-top: 20px; 
-
+    padding-top: 20px;
 }
 
 #wrapLogoBottom{
@@ -193,7 +261,6 @@ a:hover {
     text-orientation: mixed; 
     border: 1px dotted palevioletred;
     flex-grow: 1;
-    
 }
  
 #bottomNav {
@@ -202,8 +269,8 @@ a:hover {
     background-color: #1a353e;
     padding:15px;
 }
- 
-#bottomNav a:link, a:visited, a:active {
+
+#bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
     font-family: "ERASBD";
     color:white;
     text-decoration: none;
@@ -211,23 +278,34 @@ a:hover {
 }
 
 #bottomNav a:hover {
-    color: #008090;
+    color:#008090;
 }
 
-@media screen and (max-width: 960px) { /* voir pour passer à 812 px */
+@media screen and (max-width: 960px) { /*       voir pour passer à 812 px */
     #lateralNav{ display: none; }
 
     #header{ 
         text-align: center;
     }
-    #leftHeader, #rightHeader {
-        flex: 100%;
-        
+
+    #header{ 
+        text-align: center;
+        display: block;
     }
 
+    #leftHeader, #rightHeader {
+        flex: 100%;
+        padding:0 !important;
+    }
+
+    #bottomAbout {
+      flex-direction: column-reverse;
+    }
+      
     #footer {
         flex-direction: column;
     }
+
     #itemFooter1, #itemFooter2, #itemFooter3{
         text-align: center;
         justify-content: center;
@@ -237,7 +315,10 @@ a:hover {
     #bottomNav{ 
         position:fixed;
         bottom: 0;
-        width: 100%;
-       
+        width: 100%
+    }
+
+    .articleHome {
+      flex-direction: column;
     }
 }

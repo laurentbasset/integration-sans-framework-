@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- script -->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js" async></script>
 
     <!-- styles CSS -->
     <link  href="css/fonts.css" rel="stylesheet">
