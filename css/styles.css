@@ -39,6 +39,7 @@ a:hover {
     flex: 50%; 
     text-transform: uppercase;
     font-size: 12px;
+    white-space: nowrap;
 }
 
 #wrpLogo{
@@ -255,18 +256,19 @@ a:hover {
     justify-content: flex-end;
 }
 
-/*//////////////////////////////////////// NAVIGATIONS */
+/*//////////////////////////////////////// Lateral NAVIGATIONS */
 #lateralNav{
-     border: 1px dotted palevioletred; 
+     /* border: 1px dotted palevioletred;  */
     flex-grow: 1;
-    right: 0;
+    right: 5px;
     position: fixed;
     width: 44px;
+    z-index: 2;
     
 }
 #topNav{
     margin-top: 120px;
-    box-shadow: -10px 0px 10px -10px rgba(0, 0, 0, 0.15) ;
+    box-shadow: -20px 5px 10px -20px rgba(0, 0, 0, 0.15) ;
 } 
 
 #bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
@@ -280,6 +282,8 @@ a:hover {
     color:#008090;
 }
 
+/*Menu Burger*/
+/* Menu Burger */
 #trait1{
     height: 2.5px;
     width: 40px;
@@ -304,10 +308,32 @@ a:hover {
     color: #008090;
     
 }
+button{
+    border: none;
+    background-color: #ffffff00;
+    cursor: pointer;
+}  
+#btOpenMenu{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+} 
+#btCloseMenu{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+}
 /* Fin Menu Burger */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/*Fin Menu Burger*/
 /* Boutton  */
 .bouttonNav{
     padding-top: 110px;
+    padding-left: 5px;
     
 }
 #pictoCall{
@@ -332,7 +358,7 @@ a:hover {
 /* Fin Boutton */
 /* Bottom */
 #bottomNavLateral{
-    margin-top: 200px;
+    padding-top: 50px;
 }
 #scroll{
     writing-mode: vertical-rl;
@@ -364,10 +390,10 @@ a:hover {
 }
 /*////////////////////////////////////////FIN BOTTOM*/
 
-/*///////////////////////////////////////FIN NAV*/
+/*/////////////////////////////////////// FIN LATERALE NAV*/
 
 @media screen and (max-width: 960px) { /*       voir pour passer à 812 px */
-    #lateralNav{ display: none; }
+    /* #lateralNav{ display: none; } */
 
     #header{ 
         text-align: center;
@@ -378,10 +404,10 @@ a:hover {
         display: block;
     }
 
-    #leftHeader, #rightHeader {
+     #leftHeader, #rightHeader {
         flex: 100%;
         padding:0 !important;
-    }
+    } 
 
     #bottomAbout {
       flex-direction: column-reverse;
@@ -414,23 +440,21 @@ a:hover {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.95);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 300px;
-    text-align:center;
-    top: 100px;
-    right: 45px;
+    top: 0;
+    right: 0;
     }
   
     .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 75px;
     color: #008090;
     display: block;
     transition: 0.3s;
-    font-family: "ERAS";
+    font-family: "ERASBD";
     text-align: right;
     padding-right: 100px;
     white-space: nowrap;
@@ -439,6 +463,10 @@ a:hover {
     .sidenav a:hover{
     color: #0ca5b9;
     }
+    #sidenavLinks{
+        padding-top: 20vh;
+        padding-right: 7.5vw;
+    }
 
     .sidenav .closebtn {
     position: absolute;
@@ -446,41 +474,9 @@ a:hover {
     right: 0;
     font-size: 36px;
     margin-left: 50px;
-    
     }
+    
+ 
 
     
-    /* Menu Burger */
-    #trait1{
-        height: 2.5px;
-        width: 40px;
-        background-color: #008090;
-        
-    }
-    #trait2{
-        height: 2.5px;
-        width: 25px;
-        background-color: #008090;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 15px;
-    }
-    #trait3{
-        height: 2.5px;
-        width: 40px;
-        background-color: #008090;
-        
-    }
-    #Menu{
-        color: #008090;
-    }
-    button{
-        border: none;
-        background-color: #ffffff00;
-        cursor: pointer;
-    }
-    /* Fin Menu Burger */
-    @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
-    }
+    
