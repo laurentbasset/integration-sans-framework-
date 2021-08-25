@@ -41,32 +41,25 @@ a:hover {
     font-size: 12px;
     white-space: nowrap;
 }
-
 #wrpLogo{
     display: inline-block;
     width:120px;
 }
-
 #wrpLogo img {
     width: 100%;
 } 
-
 /*//////////////////////////////////// MAIN */
 #main{
     border: 1px dotted blue;
 }
-
-
 /* Accueil */
 .flex-item-left {
     border: 1px dotted purple;
     flex:40%;
 }
-
 .flex-item-right {
     flex:60%;
 }
-
 .articleHome {
     display: flex;
     flex-direction: row;
