@@ -51,11 +51,43 @@
                 <?php include 'includes/footer.php'; ?>
             </footer>
     </div>
+        
     <!-- fin de la page -->
     
     <!-- menu latéral -->
-    <nav id="lateralNav">menu latéral</nav>
-
-</div>
-</body>
+        <nav id="lateralNav">
+            <div id="topNav">  
+                <button id="bt" id="menuBurger">
+                    <div id="trait1"></div>
+                    <div id="trait2"></div>
+                    <div id="trait3"></div>
+                <span id="Menu">Menu</span> 
+              </button>
+                    <div class="bouttonNav" >
+                        <bouton class="bt" ><div id="langueFR">FR</div></bouton>
+                        <bouton class="bt"><img id="pictoCall" src="picto/call.svg" alt="appel"></bouton>
+                        <bouton class="bt"><img id="pictoLoupe" src="picto/loupe.svg" alt="rechercher"></bouton>
+                    </div>
+                </div>
+                <div id="bottomNavLateral">
+                    <div id="scroll">SCROLL</div>
+                    <div id="traitScroll"></div>
+                </div>
+            </div>
+        </nav>
+        <div id="leftHeader">
+            <div id="wrpLogo"><img src="img/imageCL.jpg" alt="logo"></div>
+        </div>
+            <div id="rightHeader">
+                <p>Un crédit vous engage et doit être remboursé.<br> 
+                    Vérifiez vos capacités de remboursementavant de vous engager.</p>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <button id="btClose" class="closebtn" >&times;</button>
+                <a href="#">ACCEUIL</a>
+                <a href="#">QUI SOMMES NOUS ?</a>
+                <a href="#">NOS OFFRES</a>
+                <a href="#">CONTACTEZ-NOUS</a>
+            </div>
+    </body>
 </html>

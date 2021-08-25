@@ -15,7 +15,7 @@ a:hover {
 #wrapper {
     position: relative;
     margin: auto;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     display: flex;
     align-items: stretch;
 }
@@ -255,20 +255,19 @@ a:hover {
     justify-content: flex-end;
 }
 
-/* NAVIGATIONS */
+/*//////////////////////////////////////// NAVIGATIONS */
 #lateralNav{
-    writing-mode: vertical-rl;
-    text-orientation: mixed; 
-    border: 1px dotted palevioletred;
+     border: 1px dotted palevioletred; 
     flex-grow: 1;
+    right: 0;
+    position: fixed;
+    width: 44px;
+    
 }
- 
-#bottomNav {
-    text-align: center;
-    border:1px dotted palevioletred;
-    background-color: #1a353e;
-    padding:15px;
-}
+#topNav{
+    margin-top: 120px;
+    box-shadow: -10px 0px 10px -10px rgba(0, 0, 0, 0.15) ;
+} 
 
 #bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
     font-family: "ERASBD";
@@ -280,6 +279,92 @@ a:hover {
 #bottomNav a:hover {
     color:#008090;
 }
+
+#trait1{
+    height: 2.5px;
+    width: 40px;
+    background-color: #008090;
+    
+}
+#trait2{
+    height: 2.5px;
+    width: 25px;
+    background-color: #008090;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+#trait3{
+    height: 2.5px;
+    width: 40px;
+    background-color: #008090;
+    
+}
+#Menu{
+    color: #008090;
+    
+}
+/* Fin Menu Burger */
+/* Boutton  */
+.bouttonNav{
+    padding-top: 110px;
+    
+}
+#pictoCall{
+    height: 30px;
+    width: 30px;
+    margin-top:3px;
+    margin-left: 1px;
+    
+}
+#pictoLoupe{
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+#langueFR{
+    color: #008090;
+    font-family: sans-serif;
+    font-size: 25px;
+    transform: translateY(5px);
+}
+/* Fin Boutton */
+/* Bottom */
+#bottomNavLateral{
+    margin-top: 200px;
+}
+#scroll{
+    writing-mode: vertical-rl;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    color: gray;
+}
+#traitScroll{
+    height: 100px;
+    width: 2.5px;
+    background-color: #008090;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 17.5px; 
+}
+
+.bt{
+    position: relative;
+    display: inline-block;
+    height: 40px; 
+    width: 40px; 
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #008090;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*////////////////////////////////////////FIN BOTTOM*/
+
+/*///////////////////////////////////////FIN NAV*/
 
 @media screen and (max-width: 960px) { /*       voir pour passer à 812 px */
     #lateralNav{ display: none; }
@@ -322,3 +407,80 @@ a:hover {
       flex-direction: column;
     }
 }
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 300px;
+    text-align:center;
+    top: 100px;
+    right: 45px;
+    }
+  
+    .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #008090;
+    display: block;
+    transition: 0.3s;
+    font-family: "ERAS";
+    text-align: right;
+    padding-right: 100px;
+    white-space: nowrap;
+    }
+
+    .sidenav a:hover{
+    color: #0ca5b9;
+    }
+
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+    
+    }
+
+    
+    /* Menu Burger */
+    #trait1{
+        height: 2.5px;
+        width: 40px;
+        background-color: #008090;
+        
+    }
+    #trait2{
+        height: 2.5px;
+        width: 25px;
+        background-color: #008090;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    #trait3{
+        height: 2.5px;
+        width: 40px;
+        background-color: #008090;
+        
+    }
+    #Menu{
+        color: #008090;
+    }
+    button{
+        border: none;
+        background-color: #ffffff00;
+        cursor: pointer;
+    }
+    /* Fin Menu Burger */
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
