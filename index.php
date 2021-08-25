@@ -51,11 +51,52 @@
                 <?php include 'includes/footer.php'; ?>
             </footer>
     </div>
+        
     <!-- fin de la page -->
     
     <!-- menu latéral -->
-    <nav id="lateralNav">menu latéral</nav>
-
-</div>
-</body>
+        <nav id="lateralNav">
+            <div id="topNav">  
+                <button id="btOpenMenu" id="menuBurger">
+                    <div id="trait1"></div>
+                    <div id="trait2"></div>
+                    <div id="trait3"></div>
+                <span id="Menu">Menu</span> 
+              </button> 
+              <button id="btCloseMenu" id="menuBurger">
+                    <div id="trait1"></div>
+                    <div id="trait2"></div>
+                    <div id="trait3"></div>
+                <span id="Menu">Menu</span></button> 
+                    <div class="bouttonNav" >
+                        <bouton class="bt" ><div id="langueFR">FR</div></bouton>
+                        <bouton class="bt"><a href="tel:+0000000000"><img id="pictoCall" src="picto/call.svg" alt="appel"></a></bouton>
+                        <bouton class="bt"><img id="pictoLoupe" src="picto/loupe.svg" alt="rechercher"></bouton>
+                    </div>
+                
+                <div id="bottomNavLateral">
+                    <div id="scroll">SCROLL</div>
+                    <div id="traitScroll"></div>
+                </div>
+            </div>
+        </nav>
+        
+            <div id="mySidenav" class="sidenav">  
+                <div id="header">  
+                    <div id="leftHeader">
+                        <div id="wrpLogo"><img src="img/imageCL.jpg" alt="logo"></a></div>               
+                    </div>
+                    <div id="rightHeader">
+                        <p>Un crédit vous engage et doit être remboursé.<br> 
+                        Vérifiez vos capacités de remboursementavant de vous engager.</p>
+                    </div>
+                </div>
+                <div id="sidenavLinks">
+                    <a href="#">ACCEUIL</a>
+                    <a href="#">QUI SOMMES NOUS ?</a>
+                    <a href="#">NOS OFFRES</a>
+                    <a href="#">CONTACTEZ-NOUS</a>
+                </div>
+            </div>
+    </body>
 </html>

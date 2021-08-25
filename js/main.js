@@ -18,5 +18,3 @@ function gotoSlide2(){
   root.style.setProperty('--pos1', '-800px' );
   root.style.setProperty('--pos2', '0px' );
 }
-
-
