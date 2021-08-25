@@ -15,7 +15,7 @@ a:hover {
 #wrapper {
     position: relative;
     margin: auto;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     display: flex;
     align-items: stretch;
 }
@@ -52,13 +52,12 @@ a:hover {
 
 /*//////////////////////////////////// MAIN */
 #main{
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
 }
 
 
-/* Accueil */
+/*                                 // Page Accueil */
 .flex-item-left {
-    border: 1px dotted purple;
     flex:40%;
 }
 
@@ -121,18 +120,142 @@ a:hover {
     object-position: 90% 100%;
 }
 
-/* ABOUT */
+
+/*                                 // Slideshow */
+.contener_slideshow{
+   
+}
+
+#wrpSlideshow{
+    max-width: 400px;
+    height:400px;
+    overflow: hidden;
+    margin: auto;
+}
+.slid_1, .slid_2, .slid_3{
+    position: absolute;
+    width:400px;
+    padding:50px;
+    /* border:lawngreen 1px dotted; */
+}
+
+.slid_1{left: 0;}
+.slid_2{left: 400px;}
+.slid_3{left: 800px;}
+
+:root { 
+    --animSlide: anim_slide;
+    --pos0: 0px;
+    --pos1: -400px;
+    --pos2: -800px;
+}
+.contener_slide{
+    left:0px;
+    position: relative;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: var(--animSlide);
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-name: var(--animSlide);
+    -ms-animation-duration: 10s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-name: var(--animSlide);
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-name: var(--animSlide);
+}
+@-webkit-keyframes anim_slide {
+    0% {left: var(--pos0);}
+    22% {left: var(--pos0);}
+    33% {left: var(--pos1);}
+    45% {left: var(--pos1);}
+    66% {left: var(--pos2);}
+    90% {left: var(--pos2);}
+}
+@-moz-keyframes anim_slide {
+    0% {left: var(--pos0);}
+    22% {left: var(--pos0);}
+    33% {left: var(--pos1);}
+    45% {left: var(--pos1);}
+    66% {left: var(--pos2);}
+    90% {left: var(--pos2);}
+}
+@-ms-keyframes anim_slide {
+    0% {left: var(--pos0);}
+    22% {left: var(--pos0);}
+    33% {left: var(--pos1);}
+    45% {left: var(--pos1);}
+    66% {left: var(--pos2);}
+    90% {left: var(--pos2);}
+}
+@keyframes anim_slide {
+    0% {left: var(--pos0);}
+    22% {left: var(--pos0);}
+    33% {left: var(--pos1);}
+    45% {left: var(--pos1);}
+    66% {left: var(--pos2);}
+    90% {left: var(--pos2);}
+}
+
+/* test anim */
+/* @-webkit-keyframes anim_slide2 {  
+    0% {left:-400px;}
+    22% {left: -400px;}
+    33% {left:-800px;}
+    45% {left:-800px;}
+    66% {left:0px;}
+    90% {left:0px;}
+}
+@-moz-keyframes anim_slide2 {
+    0% {left:-400px;}
+    22% {left: -400px;}
+    33% {left:-800px;}
+    45% {left:-800px;}
+    66% {left:0px;}
+    90% {left:0px;}
+}
+@-ms-keyframes anim_slide2 {
+    0% {left:-400px;}
+    22% {left: -400px;}
+    33% {left:-800px;}
+    45% {left:-800px;}
+    66% {left:0px;}
+    90% {left:0px;}
+}
+@keyframes anim_slide2 {
+    0% {left:-400px;}
+    22% {left: -400px;}
+    33% {left:-800px;}
+    45% {left:-800px;}
+    66% {left:0px;}
+    90% {left:0px;}
+} */
+
+
+
+#ctrlSlideshow{
+    position: relative;
+    display: flex; 
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+    
+
+/*                                 // Page About */
 #about{
     display: flex;
     flex-direction: column;
 }
 #topAbout{
     position: relative;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 #imageAbout{
     width: 100%; 
     height: 45vw;
+    
 }
 
 #imageAbout img{
@@ -140,11 +263,13 @@ a:hover {
     object-position: bottom;
     width: 100%;
     height: 45vw;
+    max-height: 600px;
 }
     
 #TitreSurImage{
     width: 100%;
     height: 45vw;
+    max-height: 600px;
     background-color: rgba(17, 17, 17, 0.507);
     position: absolute;
     top:0;
@@ -177,7 +302,7 @@ a:hover {
     flex:50%; 
 }
 
-/* simulateur */
+/*                                 // simulateur */
 #containerSimulateur{
     display: flex;
     justify-content: center;
@@ -201,19 +326,15 @@ a:hover {
     border: 0;
     padding: 15px 35px;
 }
-.ctnBtLeft{
-    text-align: left;;
-}
-.wrpArrow {
-    height: 30px;
-}
-.wrpArrow img {
-    height: 100%;
-}
+.ctnBtLeft{ text-align: left; }
+.wrpArrow { height: 30px; }
+.wrpArrow img { height: 100%; }
 
-#simCalculPret{
-    display: none;
-}
+#simCalculPret{ display: none; }
+#simCalculPret input { width:100%; height: 50px; font-size: 24px; text-align: center; }
+#field1{ text-align: center; padding: 7px; }
+#field2{ display: inline-block; float: left; width: 50%;padding: 7px; }
+#field3{ display: inline-block; float: left; width: 50%;padding: 7px; }
 
 /*//////////////////////////////////// FOOTER */
 #footer{
@@ -255,17 +376,17 @@ a:hover {
     justify-content: flex-end;
 }
 
-/* NAVIGATIONS */
+/*////////////////////////////////////  NAVIGATIONS */
 #lateralNav{
     writing-mode: vertical-rl;
     text-orientation: mixed; 
-    border: 1px dotted palevioletred;
+    /* border: 1px dotted palevioletred; */
     flex-grow: 1;
 }
  
 #bottomNav {
     text-align: center;
-    border:1px dotted palevioletred;
+    /* border:1px dotted palevioletred; */
     background-color: #1a353e;
     padding:15px;
 }
@@ -280,6 +401,8 @@ a:hover {
 #bottomNav a:hover {
     color:#008090;
 }
+
+/*                                 // MEDIA QUERIES*/
 
 @media screen and (max-width: 960px) { /*       voir pour passer à 812 px */
     #lateralNav{ display: none; }
