@@ -91,7 +91,8 @@
                         Vérifiez vos capacités de remboursementavant de vous engager.</p>
                     </div>
                 </div>
-                <div id="sidenavLinks"><a href="#">ACCEUIL</a>
+                <div id="sidenavLinks">
+                    <a href="#">ACCEUIL</a>
                     <a href="#">QUI SOMMES NOUS ?</a>
                     <a href="#">NOS OFFRES</a>
                     <a href="#">CONTACTEZ-NOUS</a>
