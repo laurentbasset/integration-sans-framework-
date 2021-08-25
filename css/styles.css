@@ -249,42 +249,38 @@ a:hover {
     justify-content: flex-end;
 }
 
-/*//////////////////////////////////////// Lateral NAVIGATIONS */
+/*//////////////////////////////////////// LATERALE BARRE */
 #lateralNav{
-     /* border: 1px dotted palevioletred;  */
     flex-grow: 1;
     right: 5px;
     position: fixed;
     width: 44px;
     z-index: 2;
-    
+    margin-top: -90px;
+    margin-right: 10px;
 }
 #topNav{
     margin-top: 120px;
-    box-shadow: -20px 5px 10px -20px rgba(0, 0, 0, 0.15) ;
 } 
-
 #bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
     font-family: "ERASBD";
     color:white;
     text-decoration: none;
     padding-inline: 10px;
 }
-
 #bottomNav a:hover {
     color:#008090;
 }
 
-/*Menu Burger*/
 /* Menu Burger */
 #trait1{
-    height: 2.5px;
+    height: 3px;
     width: 40px;
     background-color: #008090;
     
 }
 #trait2{
-    height: 2.5px;
+    height: 3px;
     width: 25px;
     background-color: #008090;
     margin-top: 10px;
@@ -292,14 +288,14 @@ a:hover {
     margin-left: 15px;
 }
 #trait3{
-    height: 2.5px;
+    height: 3px;
     width: 40px;
     background-color: #008090;
-    
+    margin-bottom: 5px;
 }
 #Menu{
     color: #008090;
-    
+    font-size: 16px;   
 }
 button{
     border: none;
@@ -318,40 +314,34 @@ button{
     display: none;
 }
 /* Fin Menu Burger */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 /*Fin Menu Burger*/
 /* Boutton  */
 .bouttonNav{
-    padding-top: 110px;
-    padding-left: 5px;
-    
+    padding-top: 50px;
+    padding-left: 10px;
+    box-shadow: -20px 5px 10px -20px rgba(0, 0, 0, 0.15);
 }
 #pictoCall{
-    height: 30px;
-    width: 30px;
-    margin-top:3px;
-    margin-left: 1px;
-    
+    height: 20px;
+    width: 20px;
+    margin-top:3px;    
 }
 #pictoLoupe{
-    height: 25px;
-    width: 25px;
-    margin-top: 5px;
-    margin-left: 2px;
+    height: 17px;
+    width: 17px;
+     margin-top: 4.25px; 
+    /* margin-left: 2px; */
 }
 #langueFR{
     color: #008090;
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     transform: translateY(5px);
 }
 /* Fin Boutton */
-/* Bottom */
+/* Bottom LATERAL BARRE */
 #bottomNavLateral{
-    padding-top: 50px;
+    padding-top: 210px;
 }
 #scroll{
     writing-mode: vertical-rl;
@@ -370,70 +360,34 @@ button{
     margin-left: 17.5px; 
 }
 
-.bt{
+.cercle{
     position: relative;
     display: inline-block;
-    height: 40px; 
-    width: 40px; 
+    height: 30px; 
+    width: 30px; 
     background-color: rgb(255, 255, 255);
     border: 2px solid #008090;
     border-radius: 50%;
     text-align: center;
     margin-bottom: 20px;
 }
-/*////////////////////////////////////////FIN BOTTOM*/
-
-/*/////////////////////////////////////// FIN LATERALE NAV*/
-
-@media screen and (max-width: 960px) { /*       voir pour passer à 812 px */
-    /* #lateralNav{ display: none; } */
-
-    #header{ 
-        text-align: center;
-    }
-
-    #header{ 
-        text-align: center;
-        display: block;
-    }
-
-     #leftHeader, #rightHeader {
-        flex: 100%;
-        padding:0 !important;
-    } 
-
-    #bottomAbout {
-      flex-direction: column-reverse;
-    }
-      
-    #footer {
-        flex-direction: column;
-    }
-
-    #itemFooter1, #itemFooter2, #itemFooter3{
-        text-align: center;
-        justify-content: center;
-        padding: 10px;  
-    }
-
-    #bottomNav{ 
-        position:fixed;
-        bottom: 0;
-        width: 100%
-    }
-
-    .articleHome {
-      flex-direction: column;
-    }
+#bottomNav {
+    text-align: center;
+    /* border:1px dotted palevioletred; */
+    background-color: #1a353e;
+    padding:15px;
 }
-    .sidenav {
+/*FIN BOTTOM LATERALE BARRE*/
+/*//////////////////////////////////////// FIN LATERAL BARRE*/
+/*/////////////////////////////////////// SIDE NAV*/
+.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(255, 255, 255, 0.95);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     transition: 0.5s;
     top: 0;
@@ -443,7 +397,7 @@ button{
     .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 75px;
+    font-size: 5vw;
     color: #008090;
     display: block;
     transition: 0.3s;
@@ -468,6 +422,45 @@ button{
     font-size: 36px;
     margin-left: 50px;
     }
+    /*FIN SIDENAV*/
+
+@media screen and (max-width: 960px) { 
+     #lateralNav{ display: none; 
+    } 
+    #header{ 
+        text-align: center;
+    }
+    #header{ 
+        text-align: center;
+        display: block;
+    }
+
+     #leftHeader, #rightHeader {
+        flex: 100%;
+        padding:0 !important;
+    } 
+    #bottomAbout {
+      flex-direction: column-reverse;
+    }
+    #footer {
+        flex-direction: column;
+    }
+    #itemFooter1, #itemFooter2, #itemFooter3{
+        text-align: center;
+        justify-content: center;
+        padding: 10px;  
+    }
+    #bottomNav{ 
+        position:fixed;
+        bottom: 0;
+        width: 100%
+    }
+    .articleHome {
+      flex-direction: column;
+    }
+}
+/*FIN MEDIA QUERIES*/
+    
     
  
 

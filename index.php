@@ -63,22 +63,22 @@
                     <div id="trait3"></div>
                 <span id="Menu">Menu</span> 
               </button> 
-              <button id="btCloseMenu" id="menuBurger">
-                    <div id="trait1"></div>
-                    <div id="trait2"></div>
-                    <div id="trait3"></div>
-                <span id="Menu">Menu</span></button> 
+                    <button id="btCloseMenu" id="menuBurger">
+                        <div id="trait1"></div>
+                        <div id="trait2"></div>
+                        <div id="trait3"></div>
+                        <span id="Menu">Menu</span>
+                    </button> 
                     <div class="bouttonNav" >
-                        <bouton class="bt" ><div id="langueFR">FR</div></bouton>
-                        <bouton class="bt"><a href="tel:+0000000000"><img id="pictoCall" src="picto/call.svg" alt="appel"></a></bouton>
-                        <bouton class="bt"><img id="pictoLoupe" src="picto/loupe.svg" alt="rechercher"></bouton>
+                        <bouton class="cercle" ><div id="langueFR">FR</div></bouton>
+                        <bouton class="cercle"><a href="tel:+0000000000"><img id="pictoCall" src="picto/call.svg" alt="appel"></a></bouton>
+                        <bouton class="cercle"><img id="pictoLoupe" src="picto/loupe.svg" alt="rechercher"></bouton>
                     </div>
-                
+            </div>
                 <div id="bottomNavLateral">
                     <div id="scroll">SCROLL</div>
                     <div id="traitScroll"></div>
                 </div>
-            </div>
         </nav>
         
             <div id="mySidenav" class="sidenav">  
@@ -92,10 +92,10 @@
                     </div>
                 </div>
                 <div id="sidenavLinks">
-                    <a href="#">ACCEUIL</a>
-                    <a href="#">QUI SOMMES NOUS ?</a>
-                    <a href="#">NOS OFFRES</a>
-                    <a href="#">CONTACTEZ-NOUS</a>
+                    <a href="?page=home" title="Accueil">ACCUEIL</a>
+                    <a href="?page=about" title="qui sommes nous">QUI SOMMES NOUS?</a>
+                    <a href="?page=offres" title="nos offres">NOS OFFRES</a>
+                    <a href="?page=contact">CONTACTEZ-NOUS</a>
                 </div>
             </div>
     </body>
