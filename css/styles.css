@@ -15,13 +15,11 @@ a:hover {
 #wrapper {
     position: relative;
     margin: auto;
-    /* max-width: 1280px; */
     display: flex;
-    align-items: stretch;
 }
 
 #page{
-    flex-grow:15;
+    padding-right:80px;
 }
 
 /*//////////////////////////////////// HEADER */
@@ -251,28 +249,32 @@ a:hover {
 
 /*//////////////////////////////////////// LATERALE BARRE */
 #lateralNav{
-    flex-grow: 1;
-    right: 5px;
+    right: 0;
     position: fixed;
-    width: 44px;
     z-index: 2;
-    margin-top: -90px;
-    margin-right: 10px;
+    background-color: white;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #topNav{
-    margin-top: 120px;
-} 
-#bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
-    font-family: "ERASBD";
-    color:white;
-    text-decoration: none;
-    padding-inline: 10px;
-}
-#bottomNav a:hover {
-    color:#008090;
+    border: violet 1px dotted;
+    display: flex;
+    flex-direction: column;
+
 }
 
+
+
 /* Menu Burger */
+#btOpenMenu{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-top: 40px;
+} 
+
 #trait1{
     height: 3px;
     width: 40px;
@@ -302,84 +304,71 @@ button{
     background-color: #ffffff00;
     cursor: pointer;
 }  
-#btOpenMenu{
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-} 
+
 #btCloseMenu{
     height: 50px;
     width: 50px;
     background-color: rgba(255, 255, 255, 0);
     display: none;
+    margin-top: 40px;
 }
 /* Fin Menu Burger */
 /*Fin Menu Burger*/
 /* Boutton  */
-.bouttonNav{
-    padding-top: 50px;
-    padding-left: 10px;
-    box-shadow: -20px 5px 10px -20px rgba(0, 0, 0, 0.15);
+.blockNavCenter{
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: -20px 5px 10px -20px rgba(0, 0, 0, 0.15); */
+    margin: 120px 0px;
 }
+.cercle{
+    position: relative;
+    display: inline-block;
+    height: 30px; 
+    width: 30px; 
+    border: 2px solid #008090;
+    border-radius: 50%;
+    text-align: center;
+    margin: 3px 0px;
+}
+
 #pictoCall{
     height: 20px;
     width: 20px;
     margin-top:3px;    
 }
+
 #pictoLoupe{
     height: 17px;
     width: 17px;
      margin-top: 4.25px; 
-    /* margin-left: 2px; */
 }
+
 #langueFR{
     color: #008090;
     font-family: sans-serif;
     font-size: 15px;
     transform: translateY(5px);
 }
-/* Fin Boutton */
-/* Bottom LATERAL BARRE */
-#bottomNavLateral{
-    padding-top: 210px;
-}
+
+
 #scroll{
-    writing-mode: vertical-rl;
-    vertical-align: middle;
-    margin-left: 10px;
-    font-family: sans-serif;
+    writing-mode: vertical-lr;
     letter-spacing: 3px;
     color: gray;
+    margin: 10px 0px;
 }
+
 #traitScroll{
     height: 100px;
     width: 2.5px;
     background-color: #008090;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 17.5px; 
 }
 
-.cercle{
-    position: relative;
-    display: inline-block;
-    height: 30px; 
-    width: 30px; 
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #008090;
-    border-radius: 50%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-#bottomNav {
-    text-align: center;
-    /* border:1px dotted palevioletred; */
-    background-color: #1a353e;
-    padding:15px;
-}
 /*FIN BOTTOM LATERALE BARRE*/
 /*//////////////////////////////////////// FIN LATERAL BARRE*/
 /*/////////////////////////////////////// SIDE NAV*/
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -392,9 +381,9 @@ button{
     transition: 0.5s;
     top: 0;
     right: 0;
-    }
+}
   
-    .sidenav a {
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 5vw;
@@ -405,15 +394,16 @@ button{
     text-align: right;
     padding-right: 100px;
     white-space: nowrap;
-    }
+}
 
-    .sidenav a:hover{
+.sidenav a:hover{
     color: #0ca5b9;
-    }
-    #sidenavLinks{
+}
+
+ #sidenavLinks{
         padding-top: 20vh;
         padding-right: 7.5vw;
-    }
+}
 
     .sidenav .closebtn {
     position: absolute;
@@ -423,41 +413,80 @@ button{
     margin-left: 50px;
     }
     /*FIN SIDENAV*/
+    #bottomNav {
+        text-align: center;
+        /* border:1px dotted palevioletred; */
+        background-color: #1a353e;
+        padding:15px;
+    }
+    #bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
+        font-family: "ERASBD";
+        color:white;
+        text-decoration: none;
+        padding-inline: 10px;
+    }
+    #bottomNav a:hover {
+        color:#008090;
+    }
+    @media screen and (max-width: 960px) { 
 
-@media screen and (max-width: 960px) { 
-     #lateralNav{ display: none; 
-    } 
     #header{ 
         text-align: center;
     }
-    #header{ 
-        text-align: center;
-        display: block;
-    }
 
-     #leftHeader, #rightHeader {
+    #leftHeader, #rightHeader {
         flex: 100%;
         padding:0 !important;
     } 
+
     #bottomAbout {
-      flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
+
     #footer {
         flex-direction: column;
     }
+
     #itemFooter1, #itemFooter2, #itemFooter3{
         text-align: center;
         justify-content: center;
         padding: 10px;  
     }
-    #bottomNav{ 
-        position:fixed;
-        bottom: 0;
-        width: 100%
-    }
+
     .articleHome {
       flex-direction: column;
     }
+    #page{
+        padding-right:0;
+    }
+    #lateralNav{
+        flex-direction: row-reverse;
+        width: 100%;
+        bottom: 0;
+        padding: 20px;
+    }
+    #scroll , #traitScroll{
+        display: none;
+    }
+    .blockNavCenter{
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    #btOpenMenu , #btCloseMenu{
+        margin: 0;
+    }
+    .cercle{
+        margin: 0px 3px;
+    }
+    #bottomNav{
+        display: none;
+    }
+    #footer{
+        padding-bottom: 100px;
+    }
+
 }
 /*FIN MEDIA QUERIES*/
     
