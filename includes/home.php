@@ -4,21 +4,21 @@
                 <div id="wrpSlideshow">
                     <div class="contener_slide">
                         <div class="slid_1">
-                            <h2>Prêt Personnel<br>multi-projets </h2>
+                            <h3>Prêt Personnel<br>multi-projets </h3>
                             <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
                             Offre valable jusqu'au 31/08/2021</p>
                             <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
                             <button class=" button">Découvrir</button>
                         </div>
                         <div class="slid_2">
-                            <h2>Autre Personnel<br>multi-projets </h2>
+                            <h3>Autre Personnel<br>multi-projets </h3>
                             <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
                             Offre valable jusqu'au 31/08/2021</p>
                             <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
                             <button class=" button">Découvrir</button>
                         </div>
                         <div class="slid_3">
-                            <h2>Prêt Personnel<br>multi-projets </h2>
+                            <h3>Prêt Personnel<br>multi-projets </h3>
                             <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
                             Offre valable jusqu'au 31/08/2021</p>
                             <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div id="ctrlSlideshow">
-                        <button onclick="gotoSlide2()">test</button> 
+                        <!-- <button onclick="gotoSlide2()">test</button>  -->
                         
                     </div>
                 </div>

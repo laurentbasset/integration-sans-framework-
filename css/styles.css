@@ -194,40 +194,6 @@ a:hover {
     90% {left: var(--pos2);}
 }
 
-/* test anim */
-/* @-webkit-keyframes anim_slide2 {  
-    0% {left:-400px;}
-    22% {left: -400px;}
-    33% {left:-800px;}
-    45% {left:-800px;}
-    66% {left:0px;}
-    90% {left:0px;}
-}
-@-moz-keyframes anim_slide2 {
-    0% {left:-400px;}
-    22% {left: -400px;}
-    33% {left:-800px;}
-    45% {left:-800px;}
-    66% {left:0px;}
-    90% {left:0px;}
-}
-@-ms-keyframes anim_slide2 {
-    0% {left:-400px;}
-    22% {left: -400px;}
-    33% {left:-800px;}
-    45% {left:-800px;}
-    66% {left:0px;}
-    90% {left:0px;}
-}
-@keyframes anim_slide2 {
-    0% {left:-400px;}
-    22% {left: -400px;}
-    33% {left:-800px;}
-    45% {left:-800px;}
-    66% {left:0px;}
-    90% {left:0px;}
-} */
-
 
 
 #ctrlSlideshow{
@@ -306,9 +272,8 @@ a:hover {
 }
 #simulateur{
     box-shadow: 4px 6px 9px grey;
-    width: 400px;
-    height: 400px;
-    padding:25px;
+    width: 55%;
+    padding:40px;
 }
 .btSim{
     background-color: #008090;
@@ -316,7 +281,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 350px;
+    width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
     border: 0;
@@ -374,9 +339,9 @@ a:hover {
 
 /*////////////////////////////////////  NAVIGATIONS */
 #lateralNav{
-    writing-mode: vertical-rl;
-    text-orientation: mixed; 
-    /* border: 1px dotted palevioletred; */
+    /* writing-mode: vertical-rl;
+    text-orientation: mixed;  */
+    border: 1px dotted palevioletred;
     flex-grow: 1;
     right: 5px;
     position: fixed;
@@ -408,117 +373,16 @@ a:hover {
 }
 
 /*                                 // MEDIA QUERIES*/
-/* Menu Burger */
-#trait1{
-    height: 2.5px;
-    width: 40px;
-    background-color: #008090;
-    
+@media screen and (max-width: 1024px) {
+    #simulateur{ width: 80%;}
 }
-#trait2{
-    height: 2.5px;
-    width: 25px;
-    background-color: #008090;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 15px;
-}
-#trait3{
-    height: 2.5px;
-    width: 40px;
-    background-color: #008090;
-    
-}
-#Menu{
-    color: #008090;
-    
-}
-button{
-    border: none;
-    background-color: #ffffff00;
-    cursor: pointer;
-}  
-#btOpenMenu{
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-} 
-#btCloseMenu{
-    height: 50px;
-    width: 50px;
-    background-color: rgba(255, 255, 255, 0);
-    display: none;
-}
-/* Fin Menu Burger */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-/*Fin Menu Burger*/
-/* Boutton  */
-.bouttonNav{
-    padding-top: 110px;
-    padding-left: 5px;
-    
-}
-#pictoCall{
-    height: 30px;
-    width: 30px;
-    margin-top:3px;
-    margin-left: 1px;
-    
-}
-#pictoLoupe{
-    height: 25px;
-    width: 25px;
-    margin-top: 5px;
-    margin-left: 2px;
-}
-#langueFR{
-    color: #008090;
-    font-family: sans-serif;
-    font-size: 25px;
-    transform: translateY(5px);
-}
-/* Fin Boutton */
-/* Bottom */
-#bottomNavLateral{
-    padding-top: 50px;
-}
-#scroll{
-    writing-mode: vertical-rl;
-    vertical-align: middle;
-    margin-left: 10px;
-    font-family: sans-serif;
-    letter-spacing: 3px;
-    color: gray;
-}
-#traitScroll{
-    height: 100px;
-    width: 2.5px;
-    background-color: #008090;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 17.5px; 
-}
-
-.bt{
-    position: relative;
-    display: inline-block;
-    height: 40px; 
-    width: 40px; 
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #008090;
-    border-radius: 50%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-/*////////////////////////////////////////FIN BOTTOM*/
-
-/*/////////////////////////////////////// FIN LATERALE NAV*/
-
 @media screen and (max-width: 960px) { /*       voir pour passer à 812 px */
     /* #lateralNav{ display: none; } */
+    h1 {font-size: inherit}
+    h2 {font-size: inherit}
+    h3 {font-size: inherit}
+    body {font-size: inherit}
+
 
     #header{ 
         text-align: center;

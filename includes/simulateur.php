@@ -1,6 +1,6 @@
 <div id="simulateur">
     <div id="simMenu">
-    <h2>Simulation de crédits en ligne</h2>
+    <h3>Simulation de crédits en ligne</h3>
     <p  style="color:#5b5c5e">Quel type de crédit souhaitez-vous réaliser ?</p>
 
     <button  class="btSim" id="btPretPerso">
