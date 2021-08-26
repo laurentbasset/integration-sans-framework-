@@ -388,7 +388,7 @@ button{
     top: 0;
     right: 0;
     background-color: rgb(255, 255, 255);
-    overflow: hidden;
+    overflow-x: hidden;
     transition: 0.5s;
     top: 0;
     right: 0;
