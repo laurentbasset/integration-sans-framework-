@@ -75,7 +75,9 @@
                 </div>
                 <div id="scroll">SCROLL</div>
                 <div id="traitScroll"></div>
+                
         </nav>
+        
 
             <div id="mySidenav" class="sidenav">  
             <!-- <?php include 'includes/header.php'; ?> -->
@@ -86,5 +88,6 @@
                     <a href="?page=contact">CONTACTEZ-NOUS</a>
                 </div>
             </div>
+            <div id="boxShadow"></div>
     </body>
 </html>

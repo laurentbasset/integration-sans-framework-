@@ -47,9 +47,9 @@ a:hover {
     width: 100%;
 } 
 /*//////////////////////////////////// MAIN */
-#main{
+/* #main{
     border: 1px dotted blue;
-}
+} */
 /* Accueil */
 .flex-item-left {
     border: 1px dotted purple;
@@ -272,7 +272,8 @@ a:hover {
     height: 50px;
     width: 50px;
     display: inline-block;
-    margin-top: 40px;
+    margin: 40px 0px 80px 0px ;
+
 } 
 
 #trait1{
@@ -310,7 +311,8 @@ button{
     width: 50px;
     background-color: rgba(255, 255, 255, 0);
     display: none;
-    margin-top: 40px;
+    margin: 40px 0px 80px 0px ;
+
 }
 /* Fin Menu Burger */
 /*Fin Menu Burger*/
@@ -318,8 +320,10 @@ button{
 .blockNavCenter{
     display: flex;
     flex-direction: column;
-    /* box-shadow: -20px 5px 10px -20px rgba(0, 0, 0, 0.15); */
-    margin: 120px 0px;
+    /* box-shadow: -5px 0px 50px black; */
+    padding: 60px 0px;
+    width: 100%;
+    align-items: center;
 }
 .cercle{
     position: relative;
@@ -365,6 +369,14 @@ button{
     background-color: #008090;
 }
 
+#boxShadow{
+    position: fixed;
+    right: 0%;
+    top: 200px;
+    width: 80px;
+    height: 200px;
+    box-shadow:  15px 0px 50px rgba(49, 49, 49, 0.75) ;
+}
 /*FIN BOTTOM LATERALE BARRE*/
 /*//////////////////////////////////////// FIN LATERAL BARRE*/
 /*/////////////////////////////////////// SIDE NAV*/
@@ -373,7 +385,6 @@ button{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     right: 0;
     background-color: rgb(255, 255, 255);
@@ -473,6 +484,7 @@ button{
         margin: 0;
         width: 100%;
         justify-content: center;
+        padding: 0;
     }
     #btOpenMenu , #btCloseMenu{
         margin: 0;
@@ -480,12 +492,16 @@ button{
     .cercle{
         margin: 0px 3px;
     }
+    #boxShadow{
+        display: none;
+    }
     #bottomNav{
         display: none;
     }
     #footer{
         padding-bottom: 100px;
     }
+
 
 }
 /*FIN MEDIA QUERIES*/
