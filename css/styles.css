@@ -200,11 +200,100 @@ a:hover {
     align-items: flex-end;
     justify-content: center;
 }
-
+/*                                  // Services */
 #services {
-    border: 1px dotted red;
+    background: url(../img/bgServices.svg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top:-150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color:white;
+}
+#topServices{
+    padding:50px 50px 50px 0;
+    width: 50%;
+    text-align: right;
+    font-size:medium;
+}
+#topServices p {
+    color: #b6b6b6;
+}
+#topServices strong {
+    color:#f5f4f4;
+}
+#bottomServices{
+    display: flex;
+    width:100%;
+}
+#leftBottomServices{
+    width: 100%;
+    padding:50px;
+    margin-top: -100px;
+    
+}
+.btnServices{
+    display: block;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.2vw;
+    line-height: 3.15;
+    background-color: #fff0;
+    margin-bottom: 4px;
+    width: 100%;
+    opacity: 0.5;
+    transition : transform 0.5s;
 }
     
+.btnServices:hover{
+    opacity: 1;
+    transform: translateX(20px);
+    
+} 
+
+#rightBottomServices{
+    background-image: url(../img/bgServicesGreen.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    padding: 50px;
+}
+#visuel { width:100%; }
+#visuel img { width: 100%;}
+
+.btnMore{
+    display: block;
+    font-size: 15px;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    background-color: #fff0;
+}
+
+.btnMore::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: white;
+    transition:width 1s;
+    margin-top: 6%;
+}
+
+.btnMore:hover::after{
+    width: 35%;
+}
+
 
 /*                                 // Page About */
 #about{
@@ -268,10 +357,13 @@ a:hover {
 #containerSimulateur{
     display: flex;
     justify-content: center;
+    z-index:10;
+    
    
 }
 #simulateur{
-    box-shadow: 4px 6px 9px grey;
+    box-shadow: 4px 6px 9px black;
+    background-color: white;
     width: 55%;
     padding:40px;
 }
