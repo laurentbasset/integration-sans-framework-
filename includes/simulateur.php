@@ -1,6 +1,6 @@
 <div id="simulateur">
     <div id="simMenu">
-    <h2>Simulation de crédits en ligne</h2>
+    <h3>Simulation de crédits en ligne</h3>
     <p  style="color:#5b5c5e">Quel type de crédit souhaitez-vous réaliser ?</p>
 
     <button  class="btSim" id="btPretPerso">
@@ -30,22 +30,26 @@
 
     <div id="simCalculPret">
         <h2>Prêt Personnel</h2>
-        <div>
-            <span>Montant à emprunter</span>
-            <input type="text">
-            <span>Choisissez un montant entre 500 et 75 000 €</span>
-            <div>
-                Mensualités
-                <input type="text">
-                <i>De 10 à 12 000 €</i>
-            </div>
-            <div>
-                Ou durée
-                <input type="text">
-                <i>De 6 à 84 mois</i>
-            </div>
+
+        <div id="field1">
+            <p>Montant à emprunter</p>
+            <input type="text" id="montant" class="inputCal">
+            <p><em>Choisissez un montant entre 500 et 75 000 €</em></p>
         </div>
-        <button id="btCloseCalcul">fermer</button>
+
+        <div id="field2">
+            <p>Mensualités</p>
+            <input type="text" id="mensualites" class="inputCal">
+            <p>De 10 à 12 000 €</p>
+        </div>
+
+        <div id="field3">
+            <p>Ou durée</p>
+            <input type="text" id="duree" class="inputCal">
+            <p>De 6 à 84 mois</p>
+        </div>
+    
+    <button id="btCloseCalcul">fermer</button>
     </div>
 
 </div>

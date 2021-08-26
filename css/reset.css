@@ -64,6 +64,11 @@ strong{
 	color: #001d26;
 }
 
-h1, h2{
+h1, h2, h3{
+	
 	font-family: 'ERAS BOLD', sans-serif !important ;
 }
+h1 {font-size: 3.5vw;}
+h2 {font-size: 2.5vw;}
+h3 {font-size: 2vw;}
+body {font-size: 1.5vw;}

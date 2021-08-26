@@ -1,17 +1,41 @@
         <article class="articleHome">
-            <section class="flex-item-left" id="slideshow">
-                slide show
-                <!-- <h2>Prêt Personnel<br>multi-projets </h2>
-                <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
-                Offre valable jusqu'au 31/08/2021</p>
-                <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
-                <button class=" button">Découvrir</button> -->
+            <!-- Slideshow -->
+            <section class="flex-item-left contener_slideshow">
+                <div id="wrpSlideshow">
+                    <div class="contener_slide">
+                        <div class="slid_1">
+                            <h3>Prêt Personnel<br>multi-projets </h3>
+                            <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
+                            Offre valable jusqu'au 31/08/2021</p>
+                            <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
+                            <button class=" button">Découvrir</button>
+                        </div>
+                        <div class="slid_2">
+                            <h3>Prêt Personnel<br>multi-projets </h3>
+                            <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
+                            Offre valable jusqu'au 31/08/2021</p>
+                            <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
+                            <button class=" button">Découvrir</button>
+                        </div>
+                        <div class="slid_3">
+                            <h3>Prêt Personnel<br>multi-projets </h3>
+                            <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
+                            Offre valable jusqu'au 31/08/2021</p>
+                            <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
+                            <button class=" button">Découvrir</button>
+                        </div>
+                    </div>
+                    <div id="ctrlSlideshow">
+                        <!-- <button onclick="gotoSlide2()">test</button>  -->
+                        
+                    </div>
+                </div>
                 
             </section>
             
             <!-- simulateur -->
             <section class="flex-item-right" id="containerSimulateur">
-            <?php include 'simulateur.php' ?>
+                <?php include 'simulateur.php' ?>
             </section> 
             
         </article>
@@ -29,7 +53,27 @@
                     <strong>Rachat de crédit :</strong> si vous souhaitez regrouper un ou plusieurs crédits. Ne prenez jamais un crédit à la consommation pour rembourser un crédit existant ! En tant qu'organisme de crédit responsable, <strong>le Crédit Lédonien</strong> vous accompagne et vous propose une offre de rachat et de regroupement de crédits adaptée à votre situation afin de vous permettre d'honorer vos échéances dans le respect de votre budget.
                 </p>  
             </section>
-            <section class="flex-item-right"></section>
+            <section class="flex-item-right" id="services">
+                <div id="topServices">
+                    <h2>Découvrez nos offres et services</h2>
+                    <p>Auto, Travaux, Déco, le <strong>Crédit Lédonien</strong> propose une solution de financement pour chacun de vos projets personnels.</p>
+                </div>
+                <div id="bottomServices">
+                    <div id="leftBottomServices">
+                        <button class="btnServices">Touvez votre prochain véhicule!</button>
+                        <button class="btnServices">Prêt personnel le Crédit Lédonien</button>
+                        <button class="btnServices">Carte de crédit MasterCard</button>
+                        <button class="btnServices">Prêt personnel Travaux</button> 
+                    </div>
+                    <div id="rightBottomServices">
+                        <div id="visuel"><img src="img/creditAuto.png" alt="visuel"></div>
+                        <div>
+                            <p>Le Crédit Lédonien vous propose une large sélection de voiture en association avec nos partenaires locaux</p>
+                            <button class="btnMore">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </article>
 
         <article class="articleHome flex-container">
