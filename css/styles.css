@@ -21,7 +21,7 @@ a:hover {
 }
 
 #page{
-    flex-grow:15;
+    /* flex-grow:15; */
 }
 
 /*//////////////////////////////////// HEADER */
@@ -190,8 +190,6 @@ a:hover {
     66% {left: var(--pos2);}
     90% {left: var(--pos2);}
 }
-
-
 
 #ctrlSlideshow{
     position: relative;
@@ -431,7 +429,7 @@ a:hover {
 }
 
 /*////////////////////////////////////  NAVIGATIONS */
-#sideNav{
+#lateralNav{
     /* writing-mode: vertical-rl;
     text-orientation: mixed;  */
     border: 1px dotted red;

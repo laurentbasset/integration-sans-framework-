@@ -54,7 +54,7 @@
         
     <!-- fin de la page -->
     
-    <nav id="sideNav">
+    <nav id="lateralNav">
         m</br>
         e</br>
         n</br>
