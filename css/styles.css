@@ -49,7 +49,7 @@ a:hover {
     width: 100%;
 } 
 /*//////////////////////////////////// MAIN */
-/* #main{ border: 1px dotted blue; } */
+#main{ border: 1px dotted orange; }
 
 
 /*                                 // Page Accueil */
@@ -116,13 +116,13 @@ a:hover {
 
 
 /*                                 // Slideshow */
-/* .contener_slideshow{
-   
-} */
+.contener_slideshow{
+    border: 1px dotted orange;
+}
 
 #wrpSlideshow{
     max-width: 400px;
-    height:400px;
+    height:100%;
     overflow: hidden;
     margin: auto;
 }
@@ -130,7 +130,6 @@ a:hover {
     position: absolute;
     width:400px;
     padding:50px;
-    /* border:lawngreen 1px dotted; */
 }
 
 .slid_1{left: 0;}
@@ -201,6 +200,10 @@ a:hover {
     align-items: flex-end;
     justify-content: center;
 }
+
+#services {
+    border: 1px dotted red;
+}
     
 
 /*                                 // Page About */
@@ -246,20 +249,19 @@ a:hover {
 }
 
 #leftAbout{
-    padding: 50px;
+    padding: 40px;
     color: #5b5c5e;
     flex:50%;
-}
-#leftAbout section {
     margin-bottom: 50px;
 }
+/* #leftAbout section { margin-bottom: 50px; } */
 
 #leftAbout h2 {
     color:black;
 }
 
 #rightAbout{
-    flex:50%; 
+    flex:60%; 
 }
 
 /*                                 // simulateur */
@@ -337,16 +339,12 @@ a:hover {
 }
 
 /*////////////////////////////////////  NAVIGATIONS */
-#lateralNav{
+#sideNav{
     /* writing-mode: vertical-rl;
     text-orientation: mixed;  */
-    border: 1px dotted palevioletred;
-    flex-grow: 1;
-    right: 5px;
+    border: 1px dotted red;
+    right: 0;
     position: fixed;
-    width: 44px;
-    z-index: 2;
-    
 }
  
 #bottomNav {

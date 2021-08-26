@@ -11,7 +11,7 @@
                             <button class=" button">Découvrir</button>
                         </div>
                         <div class="slid_2">
-                            <h3>Autre Personnel<br>multi-projets </h3>
+                            <h3>Prêt Personnel<br>multi-projets </h3>
                             <p class="offre"><span class="rate"> 4,07%</span> TAEG fixe<br>
                             Offre valable jusqu'au 31/08/2021</p>
                             <p class="duree">Pour 6 500€ empruntés sur 60 mois</p>
@@ -53,7 +53,7 @@
                     <strong>Rachat de crédit :</strong> si vous souhaitez regrouper un ou plusieurs crédits. Ne prenez jamais un crédit à la consommation pour rembourser un crédit existant ! En tant qu'organisme de crédit responsable, <strong>le Crédit Lédonien</strong> vous accompagne et vous propose une offre de rachat et de regroupement de crédits adaptée à votre situation afin de vous permettre d'honorer vos échéances dans le respect de votre budget.
                 </p>  
             </section>
-            <section class="flex-item-right"></section>
+            <section class="flex-item-right" id="services"></section>
         </article>
 
         <article class="articleHome flex-container">

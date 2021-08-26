@@ -54,6 +54,11 @@
         
     <!-- fin de la page -->
     
-    <nav id="lateralNav">m</nav>
+    <nav id="sideNav">
+        m</br>
+        e</br>
+        n</br>
+        u</u>
+    </nav>
     </body>
 </html>
