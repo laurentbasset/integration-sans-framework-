@@ -56,7 +56,7 @@ a:hover {
     text-transform: uppercase;
     font-size: 12px;
     white-space: nowrap;
-    text-align: center;   
+    text-align: left;   
 }
 
 .wrpLogo{
@@ -323,9 +323,7 @@ a:hover {
     margin-top: 6%;
 }
 
-.btnMore:hover::after{
-    width: 35%;
-}
+.btnMore:hover::after{ width: 35%; }
 
 
 /*/////////////////////////////////////////////////// Page About */
@@ -420,7 +418,7 @@ a:hover {
 #btPolygone {
     position: fixed;
     bottom: 40px;
-    right:85px;
+    right:88px;
     width: 40px;
     height: 40px;
 }
