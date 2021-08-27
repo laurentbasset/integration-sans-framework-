@@ -13,9 +13,9 @@ document.getElementById('field1').addEventListener("change", function() {
 
 // ouverture fermeture menu lateral
 document.getElementById("btOpenMenu").addEventListener("click", function(){
-document.getElementById("mySidenav").style.width = "100%";
-document.getElementById("btOpenMenu").style.display = "none";
-document.getElementById("btCloseMenu").style.display = "inline-block";
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("btOpenMenu").style.display = "none";
+  document.getElementById("btCloseMenu").style.display = "inline-block";
 });
 document.getElementById("btCloseMenu").addEventListener("click", function(){
   document.getElementById("mySidenav").style.width = "0";

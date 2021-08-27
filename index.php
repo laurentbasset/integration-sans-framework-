@@ -21,7 +21,7 @@
     <!-- début de la page -->
     <div id="page">
         <!-- header -->
-        <header id="header">
+        <header class="header">
             <?php include 'includes/header.php'; ?>
         </header>
 
@@ -71,9 +71,9 @@
                     <span id="Menu">Menu</span>
                 </button> 
                 <div class="blockNavCenter" >
-                    <bouton class="cercle" ><div id="langueFR">FR</div></bouton>
-                    <bouton class="cercle"><a href="tel:+0000000000"><img id="pictoCall" src="img/call.svg" alt="appel"></a></bouton>
-                    <bouton class="cercle"><img id="pictoLoupe" src="img/loupe.svg" alt="rechercher"></bouton>
+                    <button>FR</button>
+                    <button><a href="tel:+0000000000"><img id="pictoCall" src="img/call.svg" alt="appel"></a></button>
+                    <button><img id="pictoLoupe" src="img/loupe.svg" alt="rechercher"></button>
                 </div>
                 <div id="scroll">SCROLL</div>
                 <div id="traitScroll"></div>
@@ -82,13 +82,15 @@
         
 
             <div id="mySidenav" class="sidenav">  
-            <!-- <?php include 'includes/header.php'; ?> -->
+                <div class="header">
+                    <?php include 'includes/header.php'; ?>
+                </div> 
                     <div id="sidenavLinks">
-                    <a href="?page=home" title="Accueil">ACCUEIL</a>
-                    <a href="?page=about" title="qui sommes nous">QUI SOMMES NOUS?</a>
-                    <a href="?page=offres" title="nos offres">NOS OFFRES</a>
-                    <a href="?page=contact">CONTACTEZ-NOUS</a>
-                </div>
+                        <a href="?page=home" title="Accueil">ACCUEIL</a>
+                        <a href="?page=about" title="qui sommes nous">QUI SOMMES NOUS?</a>
+                        <a href="?page=offres" title="nos offres">NOS OFFRES</a>
+                        <a href="?page=contact">CONTACTEZ-NOUS</a>
+                    </div>
             </div>
             <div id="boxShadow"></div>
     </body>
