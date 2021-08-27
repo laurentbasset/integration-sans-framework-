@@ -346,6 +346,14 @@ a:hover {
 .ctnBtLeft{
     text-align: left;;
 }
+
+.wrpCarte1{
+    height: 30px;
+}
+.wrpCarte1 img{
+    
+    height: 100%;
+}
 .wrpArrow {
     height: 30px;
 }

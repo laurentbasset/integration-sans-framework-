@@ -4,6 +4,7 @@
     <p  style="color:#5b5c5e">Quel type de crédit souhaitez-vous réaliser ?</p>
 
     <button  class="btSim" id="btPretPerso">
+        <div class="wrpCarte1"><img src="img/carte1.svg" alt="carte1"></div>
         <div class="ctnBtLeft">
             <h3>Prêt personnel</h3>
             <span>Un crédit à partir de 5000 €</span>
@@ -12,6 +13,7 @@
     </button>
 
     <button  class="btSim">
+        <div><img src="img/carte2.svg" alt="carte2"></div>
         <div class="ctnBtLeft">
             <h3>crédit renouvelable</h3>
             <span>Un crédit jusqu'à 3000 €</span>
@@ -20,6 +22,7 @@
     </button>
 
     <button  class="btSim">
+    <div><img src="img/carte3.svg" alt="carte3"></div>
         <div class="ctnBtLeft">
             <h3>Rachat de crédit</h3>
             <span>Regroupez tous vos crédits en un seul</span>

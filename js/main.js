@@ -13,9 +13,7 @@ document.getElementById('btCloseCalcul').addEventListener("click", function () {
   document.getElementById('simMenu').style.display = 'block';
   document.getElementById('simCalculPret').style.display = 'none';
 
-  document.getElementById('amount').value = '';
-  document.getElementById('monthPay').value = '';
-  document.getElementById('term').value = '';
+  
 });
 
 
