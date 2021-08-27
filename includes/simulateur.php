@@ -33,19 +33,19 @@
 
         <div id="field1">
             <p>Montant à emprunter</p>
-            <input type="text" id="montant" class="inputCal">
+            <input type="number" id="amount" class="inputCal" value="500">
             <p><em>Choisissez un montant entre 500 et 75 000 €</em></p>
         </div>
 
         <div id="field2">
             <p>Mensualités</p>
-            <input type="text" id="mensualites" class="inputCal">
+            <input type="number" id="monthPay" class="inputCal" value="10">
             <p>De 10 à 12 000 €</p>
         </div>
 
         <div id="field3">
             <p>Ou durée</p>
-            <input type="text" id="duree" class="inputCal">
+            <input type="number" id="term" class="inputCal" value="6">
             <p>De 6 à 84 mois</p>
         </div>
     
