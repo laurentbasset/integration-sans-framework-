@@ -1,3 +1,5 @@
+        <div id="blackForm"><img src="img/bgServicesImg1.png" alt="form"></div>
+        
         <article class="articleHome">
             <section class="flex-item-left" id="slideshow">
                 slide show
@@ -16,7 +18,7 @@
             
         </article>
 
-        <article class="articleHome flex-container">
+        <article class="articleHome">
             <section class="flex-item-left blocTxtHome">
                 <h2>Comment se déroule une demande de crédit chez le Crédit Lédonien ? </h2>
                 <p >
@@ -29,10 +31,40 @@
                     <strong>Rachat de crédit :</strong> si vous souhaitez regrouper un ou plusieurs crédits. Ne prenez jamais un crédit à la consommation pour rembourser un crédit existant ! En tant qu'organisme de crédit responsable, <strong>le Crédit Lédonien</strong> vous accompagne et vous propose une offre de rachat et de regroupement de crédits adaptée à votre situation afin de vous permettre d'honorer vos échéances dans le respect de votre budget.
                 </p>  
             </section>
-            <section class="flex-item-right"></section>
+            <!-- Services--> 
+            <section class="flex-item-right" >
+            <div id="wrpServices">
+            <div class="services">
+
+                <div class="topServices">
+                    <h2>Découvrez nos offres et services</h2>
+                    <p>Auto, Travaux, Déco, <strong>le Crédit Lédonien</strong> propose une solution de financement pour chacun de vos projets personnels.</p>
+                </div>
+
+                <div class="leftServices">
+                    <button class="btnServices">Touvez votre prochain véhicule!</button>
+                    <button class="btnServices">Prêt personnel le Crédit Lédonien</button>
+                    <button class="btnServices">Carte de crédit MasterCard</button>
+                    <button class="btnServices">Prêt personnel Travaux</button>
+                </div>
+                
+                <div class="rightServices">
+                    <div class="imgServiceDiv">
+                        <img class="imgService" src="img/imgService1.png">
+                    </div>
+                    <div>
+                        <p>Le Crédit Lédonien vous propose une large sélection de voiture en association avec nos partenaires locaux</p>
+                    </div>
+                    <button class="btnMore">En savoir plus</button>
+                </div>
+
+            </div>
+            </div>
+            </section>
+            <!--End Services-->
         </article>
 
-        <article class="articleHome flex-container">
+        <article class="articleHome">
            
             <figure class="wrpImgMonnaie flex-item-left">
                 <img src="img/money-2724235_1920.jpg" alt="image monnaie">
@@ -57,3 +89,5 @@
                 <button class="button">En savoir plus</button>  
             </section>
         </article>
+
+        

@@ -15,7 +15,7 @@ a:hover {
 #wrapper {
     position: relative;
     margin: auto;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     display: flex;
     align-items: stretch;
 }
@@ -63,6 +63,7 @@ a:hover {
 }
 
 .flex-item-right {
+    border: 1px dotted green;
     flex:60%;
 }
 
@@ -121,6 +122,144 @@ a:hover {
     object-position: 90% 100%;
 }
 
+
+/******* services *******/
+#wrpServices{
+    display: flex;
+    justify-content: flex-end;
+}
+.services {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: right;
+    padding: 50px;
+    }
+        /*top*/
+.topServices {
+    width: 100%;
+    /* text-align: right; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: right;
+    /* border: 1px dotted blue; */
+  }
+
+.topServices h2{ 
+    color: white;
+  }
+
+.topServices p{
+    color: #feffff;
+    font-size: 14px;
+    line-height: 177%;
+    width: 50%;
+}
+.topServices strong{
+    color: #feffff;
+}
+        /*left*/
+.leftServices {  
+    /* border: 1px dotted red; */
+    width: 45%;
+    padding:4px;
+  }
+
+.btnServices{
+    display: block;
+    font-size: 15px;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    line-height: 3.15;
+    background-color: #fff0;
+    /* border-bottom: 1px solid white; */
+    margin-bottom: 4px;
+    width: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.btnServices:hover{
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+  /*right*/
+.rightServices {
+    
+    background-position: bottom;
+    border: 1px dotted yellow;
+    width: 55%;
+    /* height: 470px; */
+    background-image: url("../img/bgServicesImg2.png");
+    background-size: cover;
+    /* padding:4%; */
+  }
+  
+  .imgServiceDiv{
+    width: 100%;
+    height: 15vh;
+  }
+  
+  .imgService{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 15vh;
+  }
+  
+  .rightServices p{
+    font-size: 18px;
+    padding-left: 8%;
+    color: white;
+  }
+  
+  .btnMore{
+    display: block;
+    font-size: 15px;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    background-color: #fff0;   
+}
+  .btnMore::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: white;
+    transition:width 1s;
+    margin-top: 6%;
+  }
+  
+  .btnMore:hover::after{
+    width: 35%;
+  }
+
+/*Fin style Services*/
+
+#blackForm{
+    position: absolute;
+    right:0px;
+    top:450px;
+    z-index: -10;
+    width:60%;
+    display: flex;
+    justify-content: flex-end;
+}
+#blackForm img{
+    width: 100%;
+    /* max-width: 800px; */
+    
+}
+
+
+
+
 /* ABOUT */
 #about{
     display: flex;
@@ -177,6 +316,8 @@ a:hover {
     flex:50%; 
 }
 
+
+
 /* simulateur */
 #containerSimulateur{
     display: flex;
@@ -184,10 +325,11 @@ a:hover {
    
 }
 #simulateur{
-    box-shadow: 4px 6px 9px grey;
+    box-shadow: 4px 6px 9px black;
     width: 400px;
     height: 400px;
     padding:25px;
+    background-color: white;
 }
 .btSim{
     background-color: #008090;
@@ -297,7 +439,10 @@ a:hover {
         flex: 100%;
         padding:0 !important;
     }
-
+    
+    .leftServices, .rightServices{
+        width: 100%;
+    }
     #bottomAbout {
       flex-direction: column-reverse;
     }

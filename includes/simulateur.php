@@ -30,24 +30,23 @@
 
     <div id="simCalculPret">
         <h2>Prêt Personnel</h2>
-        <div>
+        <div id="formulaire">
             <span>Montant à emprunter</span>
-            <input type="text">
+            <input id="amount" type="number">
             <span>Choisissez un montant entre 500 et 75 000 €</span>
             <div>
                 Mensualités
-                <input type="text">
+                <input id="monthPay" type="number">
                 <i>De 10 à 12 000 €</i>
             </div>
             <div>
                 Ou durée
-                <input type="text">
+                <input id="term" type="number">
                 <i>De 6 à 84 mois</i>
             </div>
         </div>
         <button id="btCloseCalcul">fermer</button>
     </div>
-
 </div>
 
 
