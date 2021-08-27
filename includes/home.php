@@ -68,7 +68,7 @@
                     <div id="rightBottomServices">
                         <div id="visuel"><img src="img/creditAuto.png" alt="visuel"></div>
                         <div>
-                            <p>Le Crédit Lédonien vous propose une large sélection de voiture en association avec nos partenaires locaux</p>
+                            <p>Le <strong>Crédit Lédonien</strong> vous propose une large sélection de voiture en association avec nos partenaires locaux</p>
                             <button class="btnMore">En savoir plus</button>
                         </div>
                     </div>
