@@ -239,7 +239,7 @@ a:hover {
     align-items: flex-end;
 }
 .btnServices{
-    /* font-family: 'Oswald', 'Open Sans', sans-serif; */
+    font-family: 'Oswald Regular', 'Open Sans', sans-serif;
     display: block;
     border: none;
     border-bottom: 2px solid white;
