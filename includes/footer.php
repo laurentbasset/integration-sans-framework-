@@ -1,7 +1,7 @@
 <div id="itemFooter1">
 
      <div id="wrapLogoBottom">
-     <img src="img/imageNoirBlanc.jpg">
+     <img src="img/imageNoirBlanc.jpg" alt="Crédit Londonien Black and White">
     </div>
     <p>Un crédit vous engage et doit être remboursé.<br> 
     Vérifiez vos capacités de remboursementavant de vous engager.</p>

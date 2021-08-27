@@ -3,10 +3,12 @@
 body{
     font-family:'Open Sans', sans-serif;
 }
+
 a:link, a:visited, a:active {
     color: #008090;
     text-decoration: none;
 }
+
 a:hover {
     color: rgb(57, 181, 197);
     text-decoration: none;
@@ -23,29 +25,35 @@ a:hover {
 }
 
 /*//////////////////////////////////// HEADER */
-#header{
+.header{
     display: flex;
     align-items: center;
 }
 
-#leftHeader{
+.leftHeader{
     flex: 50%;
-    padding: 20px 20px 20px 60px ;
+    padding: 20px 20px 20px 60px ; 
+    border: 1px olive solid;
 }
 
-#rightHeader{
+.rightHeader{
     flex: 50%; 
     text-transform: uppercase;
     font-size: 12px;
     white-space: nowrap;
+    text-align: center;
+    border: 1px blue solid;    
 }
-#wrpLogo{
+
+.wrpLogo{
     display: inline-block;
-    width:120px;
+    width:180px; 
 }
-#wrpLogo img {
+
+.wrpLogo img {
     width: 100%;
 } 
+
 /*//////////////////////////////////// MAIN */
 /* #main{
     border: 1px dotted blue;
@@ -54,9 +62,11 @@ a:hover {
 .flex-item-left {
     flex:40%;
 }
+
 .flex-item-right {
     flex:60%;
 }
+
 .articleHome {
     display: flex;
     flex-direction: row;
@@ -124,6 +134,7 @@ a:hover {
     overflow: hidden;
     margin: auto;
 }
+
 .slid_1, .slid_2, .slid_3{
     position: absolute;
     width:400px;
@@ -140,6 +151,7 @@ a:hover {
     --pos1: -400px;
     --pos2: -800px;
 }
+
 .contener_slide{
     left:0px;
     position: relative;
@@ -156,6 +168,7 @@ a:hover {
     animation-iteration-count:infinite;
     animation-name: var(--animSlide);
 }
+
 @-webkit-keyframes anim_slide {
     0% {left: var(--pos0);}
     22% {left: var(--pos0);}
@@ -164,6 +177,7 @@ a:hover {
     66% {left: var(--pos2);}
     90% {left: var(--pos2);}
 }
+
 @-moz-keyframes anim_slide {
     0% {left: var(--pos0);}
     22% {left: var(--pos0);}
@@ -172,6 +186,7 @@ a:hover {
     66% {left: var(--pos2);}
     90% {left: var(--pos2);}
 }
+
 @-ms-keyframes anim_slide {
     0% {left: var(--pos0);}
     22% {left: var(--pos0);}
@@ -180,6 +195,7 @@ a:hover {
     66% {left: var(--pos2);}
     90% {left: var(--pos2);}
 }
+
 @keyframes anim_slide {
     0% {left: var(--pos0);}
     22% {left: var(--pos0);}
@@ -210,28 +226,34 @@ a:hover {
     align-items: flex-end;
     color:white;
 }
+
 #topServices{
     padding:50px 50px 50px 0;
     width: 50%;
     text-align: right;
     font-size:medium;
 }
+
 #topServices p {
     color: #b6b6b6;
 }
+
 #topServices strong {
     color:#f5f4f4;
 }
+
 #bottomServices{
     display: flex;
     width:100%;
 }
+
 #leftBottomServices{
     width: 100%;
     padding:50px;
     margin-top: -100px;
     
 }
+
 .btnServices{
     display: block;
     border: none;
@@ -296,10 +318,12 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+
 #topAbout{
     position: relative;
     /* margin-bottom: 25px; */
 }
+
 #imageAbout{
     width: 100%; 
     height: 45vw;
@@ -339,6 +363,7 @@ a:hover {
     flex:50%;
     margin-bottom: 50px;
 }
+
 /* #leftAbout section { margin-bottom: 50px; } */
 
 #leftAbout h2 {
@@ -355,12 +380,14 @@ a:hover {
     justify-content: center;
     z-index: 10;
 }
+
 #simulateur{
     box-shadow: 4px 6px 9px black;
     background-color: white;
     width: 55%;
     padding:40px;
 }
+
 .btSim{
     background-color: #008090;
     color: white;
@@ -373,6 +400,7 @@ a:hover {
     border: 0;
     padding: 15px 35px;
 }
+
 .ctnBtLeft{ text-align: left; }
 .wrpArrow { height: 30px; }
 .wrpArrow img { height: 100%; }
@@ -401,7 +429,7 @@ a:hover {
 
 #wrapLogoBottom{
     display: inline-block;
-    width:120px;
+    width:180px;
 }
 
 #wrapLogoBottom img{
@@ -436,14 +464,13 @@ a:hover {
     align-items: center;
     z-index: 20;
 }
+
 #topNav{
     border: violet 1px dotted;
     display: flex;
     flex-direction: column;
 
 }
-
-
 
 /* Menu Burger */
 #btOpenMenu{
@@ -460,6 +487,7 @@ a:hover {
     background-color: #008090;
     
 }
+
 #trait2{
     height: 3px;
     width: 25px;
@@ -468,16 +496,19 @@ a:hover {
     margin-bottom: 10px;
     margin-left: 15px;
 }
+
 #trait3{
     height: 3px;
     width: 40px;
     background-color: #008090;
     margin-bottom: 5px;
 }
+
 #Menu{
     color: #008090;
     font-size: 16px;   
 }
+
 button{
     border: none;
     background-color: #ffffff00;
@@ -493,8 +524,8 @@ button{
 
 }
 /* Fin Menu Burger */
-/*Fin Menu Burger*/
-/* Boutton  */
+
+/* Bouton  */
 .blockNavCenter{
     display: flex;
     flex-direction: column;
@@ -503,15 +534,13 @@ button{
     width: 100%;
     align-items: center;
 }
-.cercle{
-    position: relative;
-    display: inline-block;
-    height: 30px; 
-    width: 30px; 
-    border: 2px solid #008090;
+.blockNavCenter button{
+    color:#008090;
+    border:2px solid #008090;
     border-radius: 50%;
-    text-align: center;
-    margin: 3px 0px;
+    width: 40px;
+    height:40px;
+    margin:10px 0px;
 }
 
 #pictoCall{
@@ -523,14 +552,7 @@ button{
 #pictoLoupe{
     height: 17px;
     width: 17px;
-     margin-top: 4.25px; 
-}
-
-#langueFR{
-    color: #008090;
-    font-family: sans-serif;
-    font-size: 15px;
-    transform: translateY(5px);
+    margin-top: 4.25px; 
 }
 
 
@@ -538,11 +560,11 @@ button{
     writing-mode: vertical-lr;
     letter-spacing: 3px;
     color: gray;
-    margin: 10px 0px;
+    margin: 130px 0px 20px 0px;
 }
 
 #traitScroll{
-    height: 100px;
+    height: 150px;
     width: 2.5px;
     background-color: #008090;
 }
@@ -574,54 +596,57 @@ button{
     z-index: 12;
 }
   
-.sidenav a {
+#sidenavLinks a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 5vw;
     color: #008090;
-    display: block;
     transition: 0.3s;
     font-family: "ERASBD";
     text-align: right;
     padding-right: 100px;
     white-space: nowrap;
+    display: block;
 }
 
 .sidenav a:hover{
     color: #0ca5b9;
 }
 
- #sidenavLinks{
-        padding-top: 20vh;
-        padding-right: 7.5vw;
+#sidenavLinks{
+    padding-top: 20vh;
+    padding-right: 7.5vw;
 }
 
-    .sidenav .closebtn {
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 0;
     font-size: 36px;
     margin-left: 50px;
-    }
-    /*FIN SIDENAV*/
-    #bottomNav {
-        text-align: center;
-        /* border:1px dotted palevioletred; */
-        background-color: #1a353e;
-        padding:15px;
-    }
-    #bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
-        font-family: "ERASBD";
-        color:white;
-        text-decoration: none;
-        padding-inline: 10px;
-    }
-    #bottomNav a:hover {
-        color:#008090;
-    }
-    @media screen and (max-width: 960px) { 
+}
+/*FIN SIDENAV*/
+#bottomNav {
+    text-align: center;
+    /* border:1px dotted palevioletred; */
+    background-color: #1a353e;
+    padding:15px;
+}
 
-    #header{ 
+#bottomNav a:link, #bottomNav a:visited, #bottomNav a:active {
+    font-family: "ERASBD";
+    color:white;
+    text-decoration: none;
+    padding-inline: 10px;
+}
+
+#bottomNav a:hover {
+    color:#008090;
+}
+
+@media screen and (max-width: 960px) { 
+
+    .header{ 
         text-align: center;
     }
 
@@ -645,39 +670,46 @@ button{
     }
 
     .articleHome {
-      flex-direction: column;
+        flex-direction: column;
     }
+
     #page{
         padding-right:0;
     }
+
     #lateralNav{
         flex-direction: row-reverse;
         width: 100%;
         bottom: 0;
         padding: 20px;
     }
+
     #scroll , #traitScroll{
         display: none;
     }
+
     .blockNavCenter{
         flex-direction: row;
-        margin: 0;
-        width: 100%;
         justify-content: center;
-        padding: 0;
+        padding: 0px 60px;
+       
     }
+    .blockNavCenter button { margin: 0px 10px; }
+
     #btOpenMenu , #btCloseMenu{
         margin: 0;
     }
-    .cercle{
-        margin: 0px 3px;
-    }
+
+   
+
     #boxShadow{
         display: none;
     }
+
     #bottomNav{
         display: none;
     }
+
     #footer{
         padding-bottom: 100px;
     }
