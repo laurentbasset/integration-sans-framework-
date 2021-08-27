@@ -21,6 +21,7 @@
 
     <!-- début de la page -->
     <div id="page">
+        
         <!-- header -->
         <header class="header">
             <?php include 'includes/header.php'; ?>
@@ -38,22 +39,22 @@
                     include 'includes/home.php';
                 }
                 ?>
-            </main>
-            <!-- fin du main -->
+        </main>
+        <!-- fin du main -->
 
-            <!-- navigation du bas -->
-            <nav id="bottomNav">
-                <?php include 'includes/bottomNav.php'; ?>
-            </nav>
-            
-            
-            <!-- footer -->
-            <footer id="footer">
-                <?php include 'includes/footer.php'; ?>
-            </footer>
-    </div>
+        <!-- navigation du bas -->
+        <nav id="bottomNav">
+            <a class="linkNavBottom" href="?page=home" title="Accueil">ACCUEIL</a>
+            <a class="linkNavBottom" href="?page=about" title="qui sommes nous">QUI SOMMES NOUS ?</a>
+            <a class="linkNavBottom" href="?page=offres" title="nos offres">NOS OFFRES</a>
+            <a class="linkNavBottom" href="?page=contact">CONTACTEZ-NOUS</a>
+        </nav>
         
-
+        <!-- footer -->
+        <footer id="footer">
+            <?php include 'includes/footer.php'; ?>
+        </footer>
+    </div>
     <div id="btPolygone"><a href="#wrapper"><img src="img/polygone.svg" alt="top"></a></div>
     <!-- fin de la page -->
     
