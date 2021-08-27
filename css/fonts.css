@@ -27,3 +27,8 @@
     font-family: 'OpenSans Italic';
     src: url(../fonts/OpenSans-Italic.ttf);
 }
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald-VariableFont_wght);
+}

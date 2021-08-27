@@ -204,10 +204,10 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
-    margin-top:-150px;
+    margin-top:-120px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: flex-end;
     color:white;
 }
@@ -239,6 +239,7 @@ a:hover {
     align-items: flex-end;
 }
 .btnServices{
+    /* font-family: 'Oswald', 'Open Sans', sans-serif; */
     display: block;
     border: none;
     border-bottom: 2px solid white;
@@ -443,7 +444,7 @@ html { scroll-behavior: smooth; }
     justify-content: flex-end;
 }
 
-/*//////////////////////////////////////// LATERALE BARRE */
+/*//////////////////////////////////////// LATERAL BARRE */
 #lateralNav{
     right: 0;
     position: fixed;
@@ -468,7 +469,6 @@ html { scroll-behavior: smooth; }
     width: 50px;
     display: inline-block;
     margin: 40px 0px 80px 0px ;
-
 } 
 
 #trait1{
@@ -640,6 +640,12 @@ button{
 
 /* ////////////////////////////////////////////////////////////////// media queries */
 @media screen and (max-width: 960px) { 
+    h1 {font-size: 36px;}
+    h2 {font-size: 28px;}
+    h3 {font-size: 24px;}
+    body {font-size: 18px;}
+    .btnServices{font-size: 18px;}
+
 
     #header{ 
         text-align: center;
@@ -666,6 +672,8 @@ button{
     }
     #topServices{ width: 80%; }
     #bottomServices{ flex-direction: column; }
+    /*                                       simulateur */
+    #simulateur{ width: 100%; margin:40px; }
 
     /*                                   menu lateral */
     #lateralNav{
