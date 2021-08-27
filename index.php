@@ -52,6 +52,8 @@
             </footer>
     </div>
         
+
+    <div id="btPolygone"><a href="#wrapper"><img src="img/polygone.svg" alt="top"></a></div>
     <!-- fin de la page -->
     
     <!-- menu latéral -->
