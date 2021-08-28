@@ -48,7 +48,7 @@ a:hover {
 
 .leftHeader{
     flex: 50%;
-    padding: 20px 20px 20px 60px ; 
+    padding: 20px 20px 20px 40px ; 
 }
 
 .rightHeader{
@@ -139,9 +139,9 @@ a:hover {
 
 
 /*                              // Slideshow */
-/* .contener_slideshow{
+.contener_slideshow{
     border: 1px dotted orange;
-} */
+}
 
 #wrpSlideshow{
     max-width: 400px;
@@ -385,7 +385,7 @@ a:hover {
 #simulateur{
     box-shadow: 4px 6px 9px black;
     background-color: white;
-    width: 55%;
+    max-width: 500px;
     padding:40px;
 }
 
@@ -406,7 +406,7 @@ a:hover {
 .wrpArrow { height: 30px; }
 .wrpArrow img { height: 100%; }
 
-#simCalculPret{ display: none; }
+#simCalculPret{ display: none;  }
 #simCalculPret input { width:100%; height: 50px; font-size: 24px; text-align: center; }
 #field1{ text-align: center; padding: 7px; }
 
@@ -432,12 +432,12 @@ html { scroll-behavior: smooth; }
     flex-direction: row;
     background: #001d26;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 #itemFooter1{
     flex: 25%;
-    padding-left:60px;
+    padding-left: 40px;
     padding-top: 20px;
 }
 
@@ -651,11 +651,18 @@ button{
     body {font-size: 18px;}
     .btnServices{font-size: 18px;}
 
-    .header{ text-align: center; }
-    #leftHeader, #rightHeader {
+    .header{
+        flex-direction: column;
+        align-items: center;
+        
+     }
+    .leftHeader, .rightHeader {
         flex: 100%;
         padding:0 !important;
-    } 
+        text-align: center;
+        white-space: normal;
+    }
+
     #bottomAbout { flex-direction: column-reverse; }
     .articleHome { flex-direction: column; }
     #page{ padding-right:0; }
@@ -666,8 +673,12 @@ button{
     #bottomServices{ flex-direction: column; }
 
     /*                                   simulateur */
-    #simulateur{ width: 100%; margin:40px; }
-
+    #simulateur{ 
+        width: 100%;
+        margin:40px;
+        font-size: small;
+    }
+  
     /*                                 menu lateral */
     #lateralNav{
         flex-direction: row-reverse;
@@ -698,5 +709,12 @@ button{
         text-align: center;
         justify-content: center;
         padding: 10px;  
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .btSim{ 
+        padding:10px 10px;
+        font-size: smaller;
     }
 }

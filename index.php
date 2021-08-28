@@ -18,13 +18,14 @@
 </head>
 <body>
 <div id="wrapper">
+    
 
     <!-- début de la page -->
     <div id="page">
-        
+
         <!-- header -->
         <header class="header">
-            <?php include 'includes/header.php'; ?>
+                    <?php include 'includes/header.php'; ?>
         </header>
 
         <!-- debut du main -->
@@ -38,7 +39,7 @@
                 }else{
                     include 'includes/home.php';
                 }
-                ?>
+            ?>
         </main>
         <!-- fin du main -->
 
@@ -81,19 +82,18 @@
                 <div id="traitScroll"></div>
                 
         </nav>
-        
 
-            <div id="mySidenav" class="sidenav">  
-                <div class="header">
-                    <?php include 'includes/header.php'; ?>
-                </div> 
-                    <div id="sidenavLinks">
-                        <a href="?page=home" title="Accueil">ACCUEIL</a>
-                        <a href="?page=about" title="qui sommes nous">QUI SOMMES NOUS?</a>
-                        <a href="?page=offres" title="nos offres">NOS OFFRES</a>
-                        <a href="?page=contact">CONTACTEZ-NOUS</a>
-                    </div>
-            </div>
-            <div id="boxShadow"></div>
+        <div id="mySidenav" class="sidenav">  
+            <div class="header">
+                <?php include 'includes/header.php'; ?>
+            </div> 
+                <div id="sidenavLinks">
+                    <a href="?page=home" title="Accueil">ACCUEIL</a>
+                    <a href="?page=about" title="qui sommes nous">QUI SOMMES NOUS?</a>
+                    <a href="?page=offres" title="nos offres">NOS OFFRES</a>
+                    <a href="?page=contact">CONTACTEZ-NOUS</a>
+                </div>
+        </div>
+        <div id="boxShadow"></div>
     </body>
 </html>
