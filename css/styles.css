@@ -652,7 +652,6 @@ button{
         padding:5px;
         text-align: center;
         white-space: normal;
-
     }
 
     #bottomAbout { flex-direction: column-reverse; }
