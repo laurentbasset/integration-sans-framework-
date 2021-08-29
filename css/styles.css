@@ -139,15 +139,19 @@ a:hover {
 
 
 /*                              // Slideshow */
-.contener_slideshow{
-    border: 1px dotted orange;
-}
+/* .contener_slideshow{
+    
+} */
 
 #wrpSlideshow{
     max-width: 400px;
     height:100%;
     overflow: hidden;
     margin: auto;
+}
+.contener_slide{
+    display: inline-block;
+    height: 400px;
 }
 
 .slid_1, .slid_2, .slid_3{
