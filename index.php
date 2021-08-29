@@ -88,7 +88,7 @@
                     <a href="?page=contact">CONTACTEZ-NOUS</a>
                 </div>
         </div>
-        
+
         <div id="boxShadow"></div>
     </div>
     </body>
