@@ -649,9 +649,10 @@ button{
      }
     .leftHeader, .rightHeader {
         flex: 100%;
-        padding:0 !important;
+        padding:5px;
         text-align: center;
         white-space: normal;
+
     }
 
     #bottomAbout { flex-direction: column-reverse; }
@@ -659,9 +660,10 @@ button{
     #page{ padding-right:0; }
 
     /*                                      services*/
-    #services{   margin-top: 0; }
-    #topServices{ width: 80%; }
+    #services{   margin-top: 0; background-color: black;}
+    #topServices{ width:100%; padding-left:40px;}
     #bottomServices{ flex-direction: column; }
+    .btnServices { width: 100%;}
 
     /*                                   simulateur */
     #simulateur{ 
