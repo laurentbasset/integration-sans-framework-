@@ -484,6 +484,7 @@ html { scroll-behavior: smooth; }
     width: 50px;
     display: inline-block;
     margin: 40px 0px 80px 0px ;
+    cursor: pointer;
 } 
 
 #trait1{
@@ -517,15 +518,8 @@ button{
     border: none;
     background-color: #ffffff00;
     cursor: pointer;
-}  
-
-#btCloseMenu{
-    height: 50px;
-    width: 50px;
-    background-color: rgba(255, 255, 255, 0);
-    display: none;
-    margin: 40px 0px 80px 0px ;
 }
+
 /* Fin Menu Burger */
 
 /* Boutons  */
@@ -583,7 +577,7 @@ button{
 
 /*                      side nav*/
 
-.sidenav {
+#menuOverlay {
     height: 100%;
     width: 0;
     position: fixed;
@@ -599,13 +593,13 @@ button{
 
 #sidenavLinks{
     padding-top: 20vh;
-    padding-right: 7.5vw;
+    padding-right: 5.5vw;
 }
 
 #sidenavLinks a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 5vw;
+    font-size: 4vw;
     color: #008090;
     transition: 0.3s;
     font-family: "ERASBD";
@@ -619,13 +613,6 @@ button{
     color: #0ca5b9;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 36px;
-    margin-left: 50px;
-}
 /*fin sidenav*/
 
 /*                                        bottom nav */
