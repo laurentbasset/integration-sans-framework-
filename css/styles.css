@@ -85,7 +85,6 @@ a:hover {
 .articleHome {
     display: flex;
     flex-direction: row;
-    font-size: 15 px;
 }
 
 .blocTxtHome{
@@ -652,6 +651,7 @@ button{
         padding:5px;
         text-align: center;
         white-space: normal;
+
     }
 
     #bottomAbout { flex-direction: column-reverse; }

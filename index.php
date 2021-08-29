@@ -69,7 +69,7 @@
             </div>    
             <div class="blockNavCenter" >
                 <button>FR</button>
-                <button><a href="tel:+0000000000"><img id="pictoCall" src="img/call.svg" alt="appel"></a></button>
+                <button id='call'><img id="pictoCall" src="img/call.svg" alt="appel"></button>
                 <button><img id="pictoLoupe" src="img/loupe.svg" alt="rechercher"></button>
             </div>
             <div id="scroll">SCROLL</div>

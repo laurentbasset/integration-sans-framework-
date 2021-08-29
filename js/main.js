@@ -58,3 +58,8 @@ btToggleMenu.addEventListener("click", function(){
     btToggleMenu.classList.add('active');
   }
 });
+
+document.getElementById('call').addEventListener('click', function() { 
+	window.open("tel:+330384125689");
+	}
+);
