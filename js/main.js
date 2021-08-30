@@ -42,9 +42,25 @@ function inputTerm(term) {
       }
 }
 function checkInput(){
-  if (arrInputs[0].value < 500 || arrInputs[0].value > 75000){ arrInputs[0].style.borderColor = "red";}else{arrInputs[0].style.borderColor = "initial";}
-  if (arrInputs[1].value < 10 || arrInputs[1].value > 12000){ arrInputs[1].style.borderColor = "red";}else{arrInputs[1].style.borderColor = "initial"; }
-  if (arrInputs[2].value < 6 || arrInputs[2].value > 84){ arrInputs[2].style.borderColor = "red";}else{arrInputs[2].style.borderColor = "initial";}
+
+  if (arrInputs[0].value < 500 || arrInputs[0].value > 75000){
+      arrInputs[0].classList.add('unvalid');
+    }else{
+      arrInputs[0].classList.remove('unvalid');
+  }
+
+  if (arrInputs[1].value < 10 || arrInputs[1].value > 12000){ 
+      arrInputs[1].classList.add('unvalid');
+    }else{
+      arrInputs[1].classList.remove('unvalid'); 
+  }
+
+  if (arrInputs[2].value < 6 || arrInputs[2].value > 84){ 
+      arrInputs[2].classList.add('unvalid');
+    }else{
+      arrInputs[2].classList.remove('unvalid');
+  }
+
 }
 
 // ouverture/fermeture menu lateral
