@@ -18,12 +18,14 @@
 </head>
 <body>
 <div id="wrapper">
+    
 
     <!-- début de la page -->
     <div id="page">
+
         <!-- header -->
         <header class="header">
-            <?php include 'includes/header.php'; ?>
+             <?php include 'includes/header.php'; ?>
         </header>
 
         <!-- debut du main -->
@@ -37,62 +39,57 @@
                 }else{
                     include 'includes/home.php';
                 }
-                ?>
-            </main>
-            <!-- fin du main -->
+            ?>
+        </main>
+        <!-- fin du main -->
 
-            <!-- navigation du bas -->
-            <nav id="bottomNav">
-                <?php include 'includes/bottomNav.php'; ?>
-            </nav>
-            
-            
-            <!-- footer -->
-            <footer id="footer">
-                <?php include 'includes/footer.php'; ?>
-            </footer>
-    </div>
+        <!-- navigation du bas -->
+        <nav id="bottomNav">
+            <a class="linkNavBottom" href="?page=home" title="Accueil">ACCUEIL</a>
+            <a class="linkNavBottom" href="?page=about" title="qui sommes nous">QUI SOMMES NOUS ?</a>
+            <a class="linkNavBottom" href="?page=offres" title="nos offres">NOS OFFRES</a>
+            <a class="linkNavBottom" href="?page=contact">CONTACTEZ-NOUS</a>
+        </nav>
         
-
+        <!-- footer -->
+        <footer id="footer">
+            <?php include 'includes/footer.php'; ?>
+        </footer>
+    </div>
     <div id="btPolygone"><a href="#wrapper"><img src="img/polygone.svg" alt="top"></a></div>
     <!-- fin de la page -->
     
-    <!-- menu latéral -->
+    <!-- menu latéral                                                                            !!!!!!!!!!!!!!!!!! bouton toggle a regler --> 
         <nav id="lateralNav">
-            <button id="btOpenMenu" id="menuBurger">
+            <div id="btOpenMenu">
                 <div id="trait1"></div>
                 <div id="trait2"></div>
                 <div id="trait3"></div>
             <span id="Menu">Menu</span> 
-            </button> 
-                <button id="btCloseMenu" id="menuBurger">
-                    <div id="trait1"></div>
-                    <div id="trait2"></div>
-                    <div id="trait3"></div>
-                    <span id="Menu">Menu</span>
-                </button> 
-                <div class="blockNavCenter" >
-                    <button>FR</button>
-                    <button><a href="tel:+0000000000"><img id="pictoCall" src="img/call.svg" alt="appel"></a></button>
-                    <button><img id="pictoLoupe" src="img/loupe.svg" alt="rechercher"></button>
-                </div>
-                <div id="scroll">SCROLL</div>
-                <div id="traitScroll"></div>
+            </div>    
+            <div class="blockNavCenter" >
+                <button>FR</button>
+                <button id='call'><img id="pictoCall" src="img/call.svg" alt="appel"></button>
+                <button><img id="pictoLoupe" src="img/loupe.svg" alt="rechercher"></button>
+            </div>
+            <div id="scroll">SCROLL</div>
+            <div id="traitScroll"></div>
                 
         </nav>
-        
 
-            <div id="mySidenav" class="sidenav">  
-                <div class="header">
-                    <?php include 'includes/header.php'; ?>
-                </div> 
-                    <div id="sidenavLinks">
-                        <a href="?page=home" title="Accueil">ACCUEIL</a>
-                        <a href="?page=about" title="qui sommes nous">QUI SOMMES NOUS?</a>
-                        <a href="?page=offres" title="nos offres">NOS OFFRES</a>
-                        <a href="?page=contact">CONTACTEZ-NOUS</a>
-                    </div>
-            </div>
-            <div id="boxShadow"></div>
+        <div id="menuOverlay">                                                                   <!-- changer le nom de l'id -->
+            <div class="header">
+                <?php include 'includes/header.php'; ?>
+            </div> 
+                <div id="sidenavLinks">
+                    <a href="?page=home" title="Accueil">ACCUEIL</a>
+                    <a href="?page=about" title="qui sommes nous">QUI SOMMES NOUS?</a>
+                    <a href="?page=offres" title="nos offres">NOS OFFRES</a>
+                    <a href="?page=contact">CONTACTEZ-NOUS</a>
+                </div>
+        </div>
+
+        <div id="boxShadow"></div>
+    </div>
     </body>
 </html>

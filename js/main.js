@@ -42,26 +42,24 @@ function inputTerm(term) {
       }
 }
 function checkInput(){
-  if (arrInputs[0].value < 500 || arrInputs[0].value > 75000){ arrInputs[0].style.color = "red";}else{arrInputs[0].style.color = "initial";}
-  if (arrInputs[1].value < 10 || arrInputs[1].value > 12000){ arrInputs[1].style.color = "red";}else{arrInputs[1].style.color = "initial"; }
-  if (arrInputs[2].value < 6 || arrInputs[2].value > 84){ arrInputs[2].style.color = "red";}else{arrInputs[2].style.color = "initial";}
+  if (arrInputs[0].value < 500 || arrInputs[0].value > 75000){ arrInputs[0].style.borderColor = "red";}else{arrInputs[0].style.borderColor = "initial";}
+  if (arrInputs[1].value < 10 || arrInputs[1].value > 12000){ arrInputs[1].style.borderColor = "red";}else{arrInputs[1].style.borderColor = "initial"; }
+  if (arrInputs[2].value < 6 || arrInputs[2].value > 84){ arrInputs[2].style.borderColor = "red";}else{arrInputs[2].style.borderColor = "initial";}
 }
 
-// ouverture fermeture menu lateral
-document.getElementById("btOpenMenu").addEventListener("click", function(){
-  document.getElementById("mySidenav").style.width = "100%";
-  document.getElementById("btOpenMenu").style.display = "none";
-  document.getElementById("btCloseMenu").style.display = "inline-block";
+// ouverture/fermeture menu lateral
+let btToggleMenu = document.getElementById("btOpenMenu");
+btToggleMenu.addEventListener("click", function(){
+  if (btToggleMenu.className=="active") {
+    document.getElementById('menuOverlay').style.width = "0";
+    btToggleMenu.classList.remove('active');
+  }else{
+    document.getElementById('menuOverlay').style.width = "100%";
+    btToggleMenu.classList.add('active');
+  }
 });
-document.getElementById("btCloseMenu").addEventListener("click", function(){
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("btOpenMenu").style.display = "inline-block";
-  document.getElementById("btCloseMenu").style.display = "none";
-});
-// function gotoSlide2(){
-//   let root = document.documentElement;
-//   //root.style.setProperty('--animSlide', 'anim_slide2' );
-//   root.style.setProperty('--pos0', '-400px' );
-//   root.style.setProperty('--pos1', '-800px' );
-//   root.style.setProperty('--pos2', '0px' );
-// }
+
+document.getElementById('call').addEventListener('click', function() { 
+	window.open("tel:+330384125689");
+	}
+);

@@ -25,12 +25,7 @@
                             <button class=" button">Découvrir</button>
                         </div>
                     </div>
-                    <div id="ctrlSlideshow">
-                        <!-- <button onclick="gotoSlide2()">test</button>  -->
-                        
-                    </div>
                 </div>
-                
             </section>
             
             <!-- simulateur -->
