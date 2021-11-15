@@ -119,7 +119,7 @@ idImg.style.display = 'none'
 let lastChild = divVisuel.lastChild;
 divVisuel.removeChild(lastChild);
 img1 = document.createElement('img');
-img1.src = "img/creditCard.jpg"
+img1.src = "img/creditcard.jpg"
 img1.style.height = "275 px";
 divVisuel.appendChild(img1)
 });
