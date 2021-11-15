@@ -304,7 +304,7 @@ a:hover {
 }
 #rightBottomServices strong { color:white; }
 #visuel { width:100%; }
-#visuel img { width: 100%;}
+#visuel img { width: 100%;height: 275px;}
 
 .btnMore{
     display: block;
@@ -314,6 +314,7 @@ a:hover {
     text-align: left;
     cursor: pointer;
     background-color: #fff0;
+    margin-top: 20px;
 }
 
 #txtVisuel{

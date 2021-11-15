@@ -61,11 +61,11 @@
                         <button id="choix4" class="btnServices">Prêt personnel Travaux</button> 
                     </div>
                     <div id="rightBottomServices">
-                        <div id="visuel"><img id=imgDefault src="img/creditAuto.jpg" alt="visuel"></div>
+                        <div id="visuel"><img id=imgDefault src="img/creditAuto.jpg" alt="visuel" height="250px"></div>
                         <div id="txtVisuel">
-                            <p id="pDefault">Le <strong>Crédit Lédonien</strong> vous propose une large sélection de voiture en association avec nos partenaires locaux</p>
-                            <button class="btnMore">En savoir plus</button>
+                            <p id="pDefault">Le <strong>Crédit Lédonien</strong> vous propose une large sélection de voiture en association avec nos partenaires locaux.</p>
                         </div>
+                    <button class="btnMore">En savoir plus</button>
                     </div>
                 </div>
             </section>
