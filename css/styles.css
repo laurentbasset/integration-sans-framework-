@@ -316,6 +316,10 @@ a:hover {
     background-color: #fff0;
 }
 
+#txtVisuel{
+    margin-top: 20px;
+}
+
 .btnMore::after{
     display: block;
     content: '';

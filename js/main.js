@@ -85,39 +85,46 @@ document.getElementById('call').addEventListener('click', function() {
 divVisuel = document.getElementById('visuel')
 divTxtVisuel = document.getElementById('txtVisuel')
 idImg = document.getElementById('imgDefault')
+idTxt = document.getElementById('pDefault')
 
 document.getElementById('choix1').addEventListener("click", function() {
-  idImg.style.display = 'none'
   let lastChild = divVisuel.lastChild;
   divVisuel.removeChild(lastChild);
   img1 = document.createElement('img');
   img1.src = "img/creditAuto.jpg"
   divVisuel.appendChild(img1)
+  divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien</strong> vous propose une large sélection de voiture en association avec nos partenaires locaux."
 });
 
 document.getElementById('choix2').addEventListener("click", function() {
   idImg.style.display = 'none'
+  idTxt.style.display = 'none'
   let lastChild = divVisuel.lastChild;
   divVisuel.removeChild(lastChild);
   img1 = document.createElement('img');
   img1.src = "img/credit.jpg"
   divVisuel.appendChild(img1)
+  divTxtVisuel.innerHTML = "Accédez à une gamme de prêt adaptée à votre profil."
 });
 
 document.getElementById('choix3').addEventListener("click", function() {
   idImg.style.display = 'none'
+  idTxt.style.display = 'none'
   let lastChild = divVisuel.lastChild;
   divVisuel.removeChild(lastChild);
   img1 = document.createElement('img');
   img1.src = "img/creditCard.jpg"
   divVisuel.appendChild(img1)
+  divTxtVisuel.innerHTML = "Accédez à une gamme de carte de crédit adaptée à votre profil."
 });
 
 document.getElementById('choix4').addEventListener("click", function() {
   idImg.style.display = 'none'
+  idTxt.style.display = 'none'
   let lastChild = divVisuel.lastChild;
   divVisuel.removeChild(lastChild);
   img1 = document.createElement('img');
   img1.src = "img/projet.jpg"
   divVisuel.appendChild(img1)
+  divTxtVisuel.innerHTML = "Accédez à une gamme de prêt adaptée à votre profil."
 });
