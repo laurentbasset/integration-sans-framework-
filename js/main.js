@@ -79,3 +79,45 @@ document.getElementById('call').addEventListener('click', function() {
 	window.open("tel:+330384125689");
 	}
 );
+
+//Affichage leftBottomServices
+
+divVisuel = document.getElementById('visuel')
+divTxtVisuel = document.getElementById('txtVisuel')
+idImg = document.getElementById('imgDefault')
+
+document.getElementById('choix1').addEventListener("click", function() {
+  idImg.style.display = 'none'
+  let lastChild = divVisuel.lastChild;
+  divVisuel.removeChild(lastChild);
+  img1 = document.createElement('img');
+  img1.src = "img/creditAuto.jpg"
+  divVisuel.appendChild(img1)
+});
+
+document.getElementById('choix2').addEventListener("click", function() {
+  idImg.style.display = 'none'
+  let lastChild = divVisuel.lastChild;
+  divVisuel.removeChild(lastChild);
+  img1 = document.createElement('img');
+  img1.src = "img/credit.jpg"
+  divVisuel.appendChild(img1)
+});
+
+document.getElementById('choix3').addEventListener("click", function() {
+  idImg.style.display = 'none'
+  let lastChild = divVisuel.lastChild;
+  divVisuel.removeChild(lastChild);
+  img1 = document.createElement('img');
+  img1.src = "img/creditCard.jpg"
+  divVisuel.appendChild(img1)
+});
+
+document.getElementById('choix4').addEventListener("click", function() {
+  idImg.style.display = 'none'
+  let lastChild = divVisuel.lastChild;
+  divVisuel.removeChild(lastChild);
+  img1 = document.createElement('img');
+  img1.src = "img/projet.jpg"
+  divVisuel.appendChild(img1)
+});
