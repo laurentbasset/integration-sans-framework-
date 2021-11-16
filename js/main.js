@@ -104,7 +104,7 @@ img1.src = "img/creditAuto.jpg"
 img1.style.height = "275px";
 let lastChildTxt = divTxtVisuel.lastChild;
 divTxtVisuel.removeChild(lastChildTxt)
-divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien<strong> vous propose une large sélection de voiture en association avec nos partenaires locaux."
+divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien</strong> vous propose une large sélection de voiture en association avec nos partenaires locaux."
 divVisuel.appendChild(img1)
 });
 
@@ -117,7 +117,7 @@ img1.src = "img/credit.jpg"
 img1.style.height = "275px";
 let lastChildTxt = divTxtVisuel.lastChild;
 divTxtVisuel.removeChild(lastChildTxt)
-divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien<strong> vous propose une large sélection de pret personnel."
+divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien</strong> vous propose une large sélection de pret personnel."
 divVisuel.appendChild(img1)
 });
 
@@ -130,7 +130,7 @@ img1.src = "img/creditcard.jpg"
 img1.style.height = "275 px";
 let lastChildTxt = divTxtVisuel.lastChild;
 divTxtVisuel.removeChild(lastChildTxt)
-divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien<strong> vous propose une large sélection de carte de crédit."
+divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien</strong> vous propose une large sélection de carte de crédit."
 divVisuel.appendChild(img1)
 });
 
@@ -142,7 +142,7 @@ img1 = document.createElement('img');
 img1.style.height = "275px";
 let lastChildTxt = divTxtVisuel.lastChild;
 divTxtVisuel.removeChild(lastChildTxt)
-divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien<strong> vous propose une large sélection de pret personnel pour tout vos travaux."
+divTxtVisuel.innerHTML = "Le <strong>Crédit Lédonien</strong> vous propose une large sélection de pret personnel pour tout vos travaux."
 img1.src = "img/projet.jpg"
 divVisuel.appendChild(img1)
 });
